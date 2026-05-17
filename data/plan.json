@@ -1,0 +1,77 @@
+{
+  "titulo": "Plan de Entrenamiento para Futbolito / Futsal",
+  "duracion_semanas": 8,
+  "dias": [
+    {
+      "id": "dia1",
+      "nombre": "Lunes",
+      "sesion": "Resistencia + fuerza piernas + tren superior + core",
+      "lugar": "Casa",
+      "duracion": "45–55 min"
+    },
+    {
+      "id": "dia2",
+      "nombre": "Martes",
+      "sesion": "Descanso o movilidad breve",
+      "lugar": "Casa",
+      "duracion": "0–10 min"
+    },
+    {
+      "id": "dia3",
+      "nombre": "Sábado",
+      "sesion": "Técnica con balón + pase + remate controlado",
+      "lugar": "Cancha",
+      "duracion": "45–60 min"
+    },
+    {
+      "id": "dia4",
+      "nombre": "Jueves",
+      "sesion": "Agilidad controlada + fuerza unilateral + core",
+      "lugar": "Casa",
+      "duracion": "45–55 min"
+    },
+    {
+      "id": "dia5",
+      "nombre": "Miércoles",
+      "sesion": "Descanso total",
+      "lugar": "—",
+      "duracion": "Opcional"
+    },
+    {
+      "id": "dia6",
+      "nombre": "Domingo",
+      "sesion": "Balón + simulación de partido / pichanga",
+      "lugar": "Cancha",
+      "duracion": "45–60 min"
+    },
+    {
+      "id": "dia7",
+      "nombre": "Viernes",
+      "sesion": "Recuperación activa opcional + movilidad",
+      "lugar": "Casa",
+      "duracion": "20–45 min"
+    }
+  ],
+  "fases": [
+    {
+      "semanas": "1–2",
+      "nombre": "Adaptación real",
+      "intensidad": "5–6/10"
+    },
+    {
+      "semanas": "3–4",
+      "nombre": "Construcción",
+      "intensidad": "6–7/10"
+    },
+    {
+      "semanas": "5–6",
+      "nombre": "Intensidad controlada",
+      "intensidad": "7–8/10"
+    },
+    {
+      "semanas": "7–8",
+      "nombre": "Transferencia",
+      "intensidad": "ritmo de partido controlado"
+    }
+  ]
+}

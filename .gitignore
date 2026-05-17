@@ -1,0 +1,17 @@
+# Archivos temporales solicitados
+~$*
+*.tmp
+.DS_Store
+
+# Sistema operativo / editores
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Dependencias y builds comunes
+node_modules/
+dist/
+build/
+.cache/

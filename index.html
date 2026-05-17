@@ -4,550 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan de Entrenamiento - Futbolito / Futsal</title>
-    <style>
-        :root {
-            --green-dark: #1a4d2e;
-            --green-mid: #2d7a46;
-            --green-light: #4caf50;
-            --green-pale: #e8f5e9;
-            --orange: #e67e22;
-            --orange-light: #fdebd0;
-            --red: #c0392b;
-            --red-light: #fdedec;
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-200: #e5e7eb;
-            --gray-300: #d1d5db;
-            --gray-400: #9ca3af;
-            --gray-500: #6b7280;
-            --gray-600: #4b5563;
-            --gray-700: #374151;
-            --gray-800: #1f2937;
-            --gray-900: #111827;
-            --white: #ffffff;
-            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-            --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
-            --radius-sm: 6px;
-            --radius: 10px;
-            --radius-lg: 16px;
-            --transition: 0.2s ease;
-            --max-width: 900px;
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 70px;
-        }
-
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #f0f4f1;
-            color: var(--gray-800);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* ── HEADER ─────────────────────── */
-        .header {
-            background: linear-gradient(135deg, #0f2b1a 0%, #1a4d2e 40%, #1e5e38 100%);
-            color: var(--white);
-            padding: 2.5rem 1.25rem 3rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -60%;
-            left: -30%;
-            width: 160%;
-            height: 220%;
-            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
-            pointer-events: none;
-        }
-        .header-content {
-            position: relative;
-            z-index: 1;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-        .header .icon {
-            font-size: 3rem;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        .header h1 {
-            font-size: clamp(1.6rem, 4vw, 2.3rem);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.35rem;
-        }
-        .header .subtitle {
-            font-size: 1.05rem;
-            opacity: 0.85;
-            font-weight: 400;
-        }
-
-        /* ── NAV ────────────────────────── */
-        .nav-bar {
-            background: var(--white);
-            border-bottom: 1px solid var(--gray-200);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-sm);
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-        }
-        .nav-bar::-webkit-scrollbar {
-            display: none;
-        }
-        .nav-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 0;
-            padding: 0 0.5rem;
-        }
-        .nav-inner a {
-            display: inline-block;
-            padding: 0.75rem 0.85rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--gray-600);
-            text-decoration: none;
-            white-space: nowrap;
-            border-bottom: 3px solid transparent;
-            transition: all var(--transition);
-            letter-spacing: -0.01em;
-            flex-shrink: 0;
-        }
-        .nav-inner a:hover,
-        .nav-inner a.active {
-            color: var(--green-dark);
-            border-bottom-color: var(--green-light);
-        }
-
-        /* ── MAIN CONTAINER ─────────────── */
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 1.5rem 1rem 3rem;
-        }
-
-        /* ── SECTION CARDS ──────────────── */
-        section {
-            margin-bottom: 2rem;
-        }
-        .card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 1.5rem 1.25rem;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--gray-100);
-            transition: box-shadow var(--transition);
-        }
-        .card:hover {
-            box-shadow: var(--shadow-md);
-        }
-        .card h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: var(--green-dark);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            letter-spacing: -0.01em;
-        }
-        .card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--gray-800);
-            margin: 1.25rem 0 0.6rem;
-        }
-        .card h3:first-of-type {
-            margin-top: 0;
-        }
-        .card h4 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--gray-700);
-            margin: 1rem 0 0.4rem;
-        }
-        .card p,
-        .card li {
-            font-size: 0.95rem;
-            color: var(--gray-700);
-            margin-bottom: 0.5rem;
-        }
-        .card ul,
-        .card ol {
-            padding-left: 1.4rem;
-            margin-bottom: 0.75rem;
-        }
-        .card li {
-            margin-bottom: 0.3rem;
-        }
-
-        /* ── HIGHLIGHT BOXES ────────────── */
-        .box {
-            border-radius: var(--radius);
-            padding: 1rem 1.15rem;
-            margin: 1rem 0;
-            font-size: 0.9rem;
-            border-left: 4px solid;
-        }
-        .box-info {
-            background: #eaf4fd;
-            border-color: #3b82f6;
-            color: #1e3a5f;
-        }
-        .box-warning {
-            background: #fef9e7;
-            border-color: #f59e0b;
-            color: #5c3d02;
-        }
-        .box-danger {
-            background: #fdedec;
-            border-color: #e74c3c;
-            color: #5b1a16;
-        }
-        .box-success {
-            background: #e8f5e9;
-            border-color: #4caf50;
-            color: #1b3a1b;
-        }
-        .box strong {
-            display: block;
-            margin-bottom: 0.3rem;
-            font-size: 0.9rem;
-        }
-
-        /* ── TABLES ─────────────────────── */
-        .table-wrap {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            margin: 0.75rem 0 1.25rem;
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--gray-200);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.88rem;
-            min-width: 500px;
-        }
-        table th,
-        table td {
-            padding: 0.6rem 0.8rem;
-            text-align: left;
-            border-bottom: 1px solid var(--gray-100);
-            vertical-align: top;
-        }
-        table th {
-            background: var(--gray-50);
-            font-weight: 700;
-            color: var(--gray-700);
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            white-space: nowrap;
-        }
-        table tr:last-child td {
-            border-bottom: none;
-        }
-        table .num {
-            text-align: right;
-            white-space: nowrap;
-            font-variant-numeric: tabular-nums;
-            font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
-            font-size: 0.82rem;
-        }
-        table .highlight-row {
-            background: #fefce8;
-        }
-
-        /* ── BADGES ─────────────────────── */
-        .badge {
-            display: inline-block;
-            padding: 0.2rem 0.55rem;
-            border-radius: 20px;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-        }
-        .badge-green {
-            background: #d4edda;
-            color: #155724;
-        }
-        .badge-orange {
-            background: #fff3cd;
-            color: #856404;
-        }
-        .badge-red {
-            background: #f8d7da;
-            color: #721c24;
-        }
-        .badge-blue {
-            background: #d6eaf8;
-            color: #1a5276;
-        }
-        .badge-purple {
-            background: #e8daef;
-            color: #4a235a;
-        }
-
-        /* ── DETAILS / ACCORDION ────────── */
-        details {
-            margin: 0.6rem 0;
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius);
-            background: var(--white);
-            overflow: hidden;
-            transition: all var(--transition);
-        }
-        details[open] {
-            box-shadow: var(--shadow-sm);
-        }
-        summary {
-            padding: 0.9rem 1rem;
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 0.95rem;
-            color: var(--gray-800);
-            background: var(--gray-50);
-            list-style: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            user-select: none;
-            transition: background var(--transition);
-            letter-spacing: -0.01em;
-        }
-        summary:hover {
-            background: var(--gray-100);
-        }
-        summary::-webkit-details-marker {
-            display: none;
-        }
-        summary::before {
-            content: '▸';
-            display: inline-block;
-            font-size: 0.7rem;
-            transition: transform 0.25s ease;
-            color: var(--green-mid);
-            flex-shrink: 0;
-        }
-        details[open] summary::before {
-            transform: rotate(90deg);
-        }
-        details[open] summary {
-            background: var(--green-pale);
-            color: var(--green-dark);
-        }
-        .details-content {
-            padding: 1rem 1.15rem;
-            border-top: 1px solid var(--gray-100);
-        }
-
-        /* ── DAY HEADER BADGE ───────────── */
-        .day-badge {
-            display: inline-block;
-            padding: 0.25rem 0.7rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.03em;
-            background: var(--green-pale);
-            color: var(--green-dark);
-            margin-left: 0.4rem;
-        }
-
-        /* ── PROGRESS BAR ───────────────── */
-        .progress-bar {
-            height: 6px;
-            background: var(--gray-200);
-            border-radius: 3px;
-            margin: 0.5rem 0 0;
-            overflow: hidden;
-        }
-        .progress-fill {
-            height: 100%;
-            background: var(--green-mid);
-            border-radius: 3px;
-            transition: width 0.6s ease;
-        }
-
-        /* ── PHASE CARDS ────────────────── */
-        .phase-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-        @media (min-width: 600px) {
-            .phase-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .phase-card {
-            background: var(--white);
-            border-radius: var(--radius);
-            padding: 1.15rem;
-            border: 2px solid var(--gray-200);
-            transition: all var(--transition);
-        }
-        .phase-card:hover {
-            border-color: var(--green-light);
-        }
-        .phase-card h4 {
-            margin-top: 0;
-            color: var(--green-dark);
-        }
-
-        /* ── SCALE DISPLAY ──────────────── */
-        .scale-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.35rem;
-            margin: 0.5rem 0;
-        }
-        .scale-item {
-            flex: 1 1 auto;
-            min-width: 60px;
-            text-align: center;
-            padding: 0.45rem 0.3rem;
-            border-radius: var(--radius-sm);
-            font-size: 0.75rem;
-            font-weight: 600;
-            background: var(--gray-100);
-            color: var(--gray-600);
-        }
-        .scale-item.scale-low {
-            background: #d4edda;
-            color: #155724;
-        }
-        .scale-item.scale-mid {
-            background: #fff3cd;
-            color: #856404;
-        }
-        .scale-item.scale-high {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        /* ── FOOTER ─────────────────────── */
-        .footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            color: var(--gray-500);
-            font-size: 0.82rem;
-            border-top: 1px solid var(--gray-200);
-            margin-top: 2rem;
-        }
-        .footer a {
-            color: var(--green-mid);
-            text-decoration: none;
-        }
-
-        /* ── BACK TO TOP ────────────────── */
-        .back-to-top {
-            position: fixed;
-            bottom: 1.5rem;
-            right: 1.5rem;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--green-dark);
-            color: var(--white);
-            border: none;
-            cursor: pointer;
-            font-size: 1.2rem;
-            box-shadow: var(--shadow-lg);
-            z-index: 90;
-            opacity: 0;
-            transform: translateY(20px);
-            pointer-events: none;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-        .back-to-top:hover {
-            background: var(--green-mid);
-            transform: translateY(-3px);
-        }
-
-        /* ── MOBILE TWEAKS ──────────────── */
-        @media (max-width: 600px) {
-            .header {
-                padding: 1.75rem 1rem 2.25rem;
-            }
-            .card {
-                padding: 1.15rem 0.9rem;
-                border-radius: var(--radius);
-            }
-            .card h2 {
-                font-size: 1.15rem;
-            }
-            .card h3 {
-                font-size: 1rem;
-            }
-            table {
-                font-size: 0.78rem;
-                min-width: 420px;
-            }
-            table th,
-            table td {
-                padding: 0.45rem 0.5rem;
-            }
-            .nav-inner a {
-                padding: 0.6rem 0.6rem;
-                font-size: 0.78rem;
-            }
-            summary {
-                font-size: 0.88rem;
-                padding: 0.7rem 0.8rem;
-            }
-            .details-content {
-                padding: 0.75rem 0.8rem;
-            }
-            .phase-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        @media (max-width: 380px) {
-            .nav-inner a {
-                padding: 0.5rem 0.45rem;
-                font-size: 0.7rem;
-            }
-            .header h1 {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+<meta name="description" content="Plan progresivo de entrenamiento para futbolito y futsal, organizado por días, fases y reglas de seguridad.">
+<meta name="theme-color" content="#1a4d2e">
+<meta property="og:title" content="Plan de Entrenamiento para Futbolito / Futsal">
+<meta property="og:description" content="8 semanas progresivas para volver a jugar con más resistencia, técnica y cuidado físico.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/og-cover.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/print.css" media="print">
+<script src="assets/js/app.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- ═══════════════ HEADER ═══════════════ -->
     <header class="header">
         <div class="header-content">
             <span class="icon">⚽</span>
@@ -556,28 +29,28 @@
         </div>
     </header>
 
-    <!-- ═══════════════ NAV ═══════════════ -->
-    <nav class="nav-bar" id="navBar">
-        <div class="nav-inner">
-            <a href="#objetivo">🎯 Objetivo</a>
-            <a href="#semanal">📅 Semanal</a>
-            <a href="#calentamiento">🔥 Calentar</a>
-            <a href="#dia1">Día 1</a>
-            <a href="#dia2">Día 2</a>
-            <a href="#dia3">Día 3</a>
-            <a href="#dia4">Día 4</a>
-            <a href="#dia6">Día 6</a>
-            <a href="#dia7">Día 7</a>
-            <a href="#fases">📆 Fases</a>
-            <a href="#dolor">⚠️ Dolor</a>
-            <a href="#nutricion">🥗 Nutrición</a>
-        </div>
-    </nav>
+    
+<nav class="nav-bar" id="navBar" aria-label="Navegación principal">
+    <div class="nav-inner">
+        <a href="#objetivo">🎯 Objetivo</a>
+        <a href="#selector-semana">🧭 Semana</a>
+        <a href="#semanal">📅 Días</a>
+        <a href="#calentamiento">🔥 Calentar</a>
+        <a href="#dia1">Día 1 · Lunes</a>
+        <a href="#dia2">Día 2 · Martes</a>
+        <a href="#dia3">Día 3 · Sábado</a>
+        <a href="#dia4">Día 4 · Jueves</a>
+        <a href="#dia5">Día 5 · Miércoles</a>
+        <a href="#dia6">Día 6 · Domingo</a>
+        <a href="#dia7">Día 7 · Viernes</a>
+        <a href="#fases">📆 Fases</a>
+        <a href="#dolor">⚠️ Dolor</a>
+        <a href="#nutricion">🥗 Nutrición</a>
+    </div>
+</nav>
 
-    <!-- ═══════════════ MAIN ═══════════════ -->
-    <main class="container">
+    <main class="container" id="contenido">
 
-        <!-- OBJETIVO -->
         <section id="objetivo">
             <div class="card">
                 <h2>🎯 Objetivo Principal</h2>
@@ -612,7 +85,6 @@
             </div>
         </section>
 
-        <!-- ESCALA DE ESFUERZO -->
         <section>
             <div class="card">
                 <h2>📊 Escala de Esfuerzo (1–10)</h2>
@@ -625,37 +97,37 @@
                     <span class="scale-item scale-high">9<br>Muy duro</span>
                     <span class="scale-item scale-high">10<br>Máximo</span>
                 </div>
-                <div class="box box-info" style="margin-top:1rem;">
+                <div class="box box-info mt-md">
                     <strong>Regla general por semanas:</strong>
                     Semanas 1–2: máx 6/10 &nbsp;|&nbsp; Semanas 3–4: 6–7/10 &nbsp;|&nbsp; Semanas 5–6: 7–8/10 &nbsp;|&nbsp; Semanas 7–8: intensidad de partido
                 </div>
             </div>
         </section>
 
-        <!-- ESTRUCTURA SEMANAL -->
-        <section id="semanal">
-            <div class="card">
-                <h2>📅 Estructura Semanal Recomendada</h2>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr><th>Día</th><th>Sesión</th><th>Lugar</th><th>Intensidad</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Lunes</td><td>Resistencia + fuerza piernas + tren superior + core</td><td>Casa</td><td><span class="badge badge-orange">Media</span></td></tr>
-                            <tr><td>Martes</td><td>Descanso o movilidad breve</td><td>Casa</td><td><span class="badge badge-green">Baja</span></td></tr>
-                            <tr><td>Miércoles</td><td>Técnica con balón + pase + remate controlado</td><td>Cancha</td><td><span class="badge badge-green">Baja-media</span></td></tr>
-                            <tr><td>Jueves</td><td>Agilidad controlada + fuerza unilateral + core</td><td>Casa</td><td><span class="badge badge-orange">Media</span></td></tr>
-                            <tr><td>Viernes</td><td>Descanso total</td><td>—</td><td><span class="badge badge-blue">—</span></td></tr>
-                            <tr><td>Sábado</td><td>Balón + simulación de partido / pichanga</td><td>Cancha</td><td><span class="badge badge-orange">Media-alta</span></td></tr>
-                            <tr><td>Domingo</td><td>Recuperación activa opcional + movilidad</td><td>Casa</td><td><span class="badge badge-green">Baja</span></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+        
+<section id="semanal">
+    <div class="card">
+        <h2>📅 Estructura de días del plan</h2>
+        <p>Se mantienen los nombres de día del proyecto original. Por eso el orden responde al plan de entrenamiento y no necesariamente al calendario semanal tradicional.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Día del plan</th><th>Nombre respetado</th><th>Sesión</th><th>Lugar</th><th>Intensidad</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Día 1</td><td>Lunes</td><td>Resistencia + fuerza piernas + tren superior + core</td><td>Casa</td><td><span class="badge badge-orange">Media</span></td></tr>
+                    <tr><td>Día 2</td><td>Martes</td><td>Descanso o movilidad breve</td><td>Casa</td><td><span class="badge badge-green">Baja</span></td></tr>
+                    <tr><td>Día 3</td><td>Sábado</td><td>Técnica con balón + pase + remate controlado</td><td>Cancha</td><td><span class="badge badge-green">Baja-media</span></td></tr>
+                    <tr><td>Día 4</td><td>Jueves</td><td>Agilidad controlada + fuerza unilateral + core</td><td>Casa</td><td><span class="badge badge-orange">Media</span></td></tr>
+                    <tr><td>Día 5</td><td>Miércoles</td><td>Descanso total</td><td>—</td><td><span class="badge badge-blue">—</span></td></tr>
+                    <tr><td>Día 6</td><td>Domingo</td><td>Balón + simulación de partido / pichanga</td><td>Cancha</td><td><span class="badge badge-orange">Media-alta</span></td></tr>
+                    <tr><td>Día 7</td><td>Viernes</td><td>Recuperación activa opcional + movilidad</td><td>Casa</td><td><span class="badge badge-green">Baja</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
-        <!-- CALENTAMIENTO -->
         <section id="calentamiento">
             <div class="card">
                 <h2>🔥 Calentamiento Estándar (8–12 min)</h2>
@@ -691,8 +163,7 @@
             </div>
         </section>
 
-        <!-- ═══════════ DÍA 1 ═══════════ -->
-        <section id="dia1">
+        <section id="dia1" class="plan-day" data-day="dia1" data-weekday="Lunes">
             <div class="card">
                 <h2>💪 Día 1 — Lunes (Casa) <span class="day-badge">45–55 min</span></h2>
                 <p><strong>Objetivo:</strong> mejorar aguante específico, fortalecer piernas y tren superior sin sobrecargar espalda baja.</p>
@@ -756,12 +227,11 @@
                         <p><strong>Evitar:</strong> abdominales rápidos, giros rusos intensos, crunches explosivos.</p>
                     </div>
                 </details>
-                <p style="margin-top:0.75rem;"><strong>Vuelta a la calma (5 min):</strong> Flexor de cadera 40s, Piriforme 40s, Isquiotibiales 40s, Cuádriceps 30s, Respiración 1 min.</p>
+                <p class="mt-sm"><strong>Vuelta a la calma (5 min):</strong> Flexor de cadera 40s, Piriforme 40s, Isquiotibiales 40s, Cuádriceps 30s, Respiración 1 min.</p>
             </div>
         </section>
 
-        <!-- ═══════════ DÍA 2 ═══════════ -->
-        <section id="dia2">
+        <section id="dia2" class="plan-day" data-day="dia2" data-weekday="Martes">
             <div class="card">
                 <h2>🧘 Día 2 — Martes (Descanso) <span class="day-badge">0–10 min</span></h2>
                 <p><strong>Objetivo:</strong> recuperar y reducir rigidez por estar sentado.</p>
@@ -770,8 +240,7 @@
             </div>
         </section>
 
-        <!-- ═══════════ DÍA 3 ═══════════ -->
-        <section id="dia3">
+        <section id="dia3" class="plan-day" data-day="dia3" data-weekday="Sábado">
             <div class="card">
                 <h2>⚽ Día 3 — Sábado (Con balón) <span class="day-badge">45–60 min</span></h2>
                 <p><strong>Objetivo:</strong> recuperar sensibilidad con el balón, mejorar pase, control, conducción y remate técnico.</p>
@@ -813,12 +282,11 @@
                         <p><strong>Fuerza máxima:</strong> Sem 1–2: 60–70% | Sem 3–4: 70–80% | Sem 5–6: 80–90% | Sem 7–8: algunos fuertes.</p>
                     </div>
                 </details>
-                <p style="margin-top:0.75rem;"><strong>Vuelta a la calma:</strong> Flexor cadera 40s, Glúteo/piriforme 40s, Aductores 40s, Gemelos 40s, Respiración 1 min.</p>
+                <p class="mt-sm"><strong>Vuelta a la calma:</strong> Flexor cadera 40s, Glúteo/piriforme 40s, Aductores 40s, Gemelos 40s, Respiración 1 min.</p>
             </div>
         </section>
 
-        <!-- ═══════════ DÍA 4 ═══════════ -->
-        <section id="dia4">
+        <section id="dia4" class="plan-day" data-day="dia4" data-weekday="Jueves">
             <div class="card">
                 <h2>🏃 Día 4 — Jueves (Casa) <span class="day-badge">45–55 min</span></h2>
                 <p><strong>Objetivo:</strong> mejorar rapidez de pies, estabilidad, cambios de dirección y prevención de lesiones.</p>
@@ -858,20 +326,18 @@
                         </ul>
                     </div>
                 </details>
-                <p style="margin-top:0.75rem;"><strong>Core (8–10 min):</strong> Plancha frontal 3×30s, Plancha lateral 2×20–30s, Dead bug 3×8, Bird-dog 2×10.</p>
+                <p class="mt-sm"><strong>Core (8–10 min):</strong> Plancha frontal 3×30s, Plancha lateral 2×20–30s, Dead bug 3×8, Bird-dog 2×10.</p>
             </div>
         </section>
 
-        <!-- DÍA 5 (descanso total) -->
-        <section>
+        <section id="dia5" class="plan-day" data-day="dia5" data-weekday="Miércoles">
             <div class="card">
-                <h2>😴 Día 5 — Viernes (Descanso total)</h2>
+                <h2>😴 Día 5 — Miércoles (Descanso total)</h2>
                 <p>No hacer entrenamiento formal. Si estás muy rígido: caminata suave 10–15 min, movilidad de cadera 5 min, estiramiento de piriforme 30s. Pero si estás cansado, descansa completamente.</p>
             </div>
         </section>
 
-        <!-- ═══════════ DÍA 6 ═══════════ -->
-        <section id="dia6">
+        <section id="dia6" class="plan-day" data-day="dia6" data-weekday="Domingo">
             <div class="card">
                 <h2>⚽ Día 6 — Domingo (Simulación o Pichanga) <span class="day-badge">45–60 min</span></h2>
                 <p><strong>Objetivo:</strong> transferir la condición física y técnica al ritmo real del futbolito.</p>
@@ -904,8 +370,7 @@
             </div>
         </section>
 
-        <!-- ═══════════ DÍA 7 ═══════════ -->
-        <section id="dia7">
+        <section id="dia7" class="plan-day" data-day="dia7" data-weekday="Viernes">
             <div class="card">
                 <h2>🧘 Día 7 — Viernes (Recuperación opcional) <span class="day-badge">20–45 min</span></h2>
                 <p><strong>Opcional durante semanas 1–2.</strong> Solo si no estás muy cansado y no hay dolor.</p>
@@ -917,7 +382,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ FASES ═══════════ -->
         <section id="fases">
             <div class="card">
                 <h2>📆 Plan por Fases</h2>
@@ -946,7 +410,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ PROTOCOLO DOLOR ═══════════ -->
         <section id="dolor">
             <div class="card">
                 <h2>⚠️ Escala de Dolor y Decisiones</h2>
@@ -971,7 +434,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ REGLAS PARA NO LESIONARTE ═══════════ -->
         <section>
             <div class="card">
                 <h2>🛡️ Reglas para No Lesionarte</h2>
@@ -990,7 +452,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ INDICADORES ═══════════ -->
         <section>
             <div class="card">
                 <h2>📈 Indicadores de Mejora</h2>
@@ -1020,7 +481,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ NUTRICIÓN ═══════════ -->
         <section id="nutricion">
             <div class="card">
                 <h2>🥗 Nutrición Básica</h2>
@@ -1040,7 +500,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ SUEÑO ═══════════ -->
         <section>
             <div class="card">
                 <h2>😴 Sueño y Recuperación</h2>
@@ -1054,7 +513,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ SITUACIONES ESPECIALES ═══════════ -->
         <section>
             <div class="card">
                 <h2>🔄 Situaciones Especiales</h2>
@@ -1079,7 +537,6 @@
             </div>
         </section>
 
-        <!-- ═══════════ MICRO-PAUSAS ═══════════ -->
         <section>
             <div class="card">
                 <h2>💻 Micro-Pausas para Teletrabajo</h2>
@@ -1097,93 +554,12 @@
 
     </main>
 
-    <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer class="footer">
         <p>⚽ Plan de Entrenamiento para Futbolito / Futsal — 8 semanas progresivas</p>
-        <p style="font-size:0.75rem;margin-top:0.3rem;">Diseñado para volver a jugar sin lesionarse · Adaptable · Enfocado en recuperación y técnica</p>
-        <p style="font-size:0.7rem;margin-top:0.5rem;opacity:0.7;">Hosted on <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+        <p class="footer-note">Diseñado para volver a jugar sin lesionarse · Adaptable · Enfocado en recuperación y técnica</p>
+        <p class="footer-note footer-note-muted">Hosted on <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
     </footer>
 
-    <!-- BACK TO TOP BUTTON -->
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
-
-    <script>
-        // ── Back to Top Button ────────────
-        const backToTopBtn = document.getElementById('backToTop');
-
-        function toggleBackToTop() {
-            if (window.scrollY > 500) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        }
-        window.addEventListener('scroll', toggleBackToTop, { passive: true });
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // ── Active Nav Link on Scroll ─────
-        const navLinks = document.querySelectorAll('.nav-inner a');
-        const sections = [];
-        navLinks.forEach(link => {
-            const id = link.getAttribute('href').replace('#', '');
-            const el = document.getElementById(id);
-            if (el) sections.push({ id, el, link });
-        });
-
-        function updateActiveNav() {
-            let currentId = '';
-            const scrollPos = window.scrollY + 100;
-            sections.forEach(s => {
-                if (s.el.offsetTop <= scrollPos) {
-                    currentId = s.id;
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + currentId) {
-                    link.classList.add('active');
-                }
-            });
-        }
-        window.addEventListener('scroll', updateActiveNav, { passive: true });
-
-        // ── Smooth scroll for nav links (offset for sticky nav) ──
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').replace('#', '');
-                const target = document.getElementById(targetId);
-                if (target) {
-                    const navHeight = document.getElementById('navBar').offsetHeight;
-                    const top = target.offsetTop - navHeight - 10;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-            });
-        });
-
-        // ── Close other details when opening one (optional, for cleaner mobile) ──
-        // Only applies to accordion groups within the same card
-        document.querySelectorAll('.card').forEach(card => {
-            const detailsEls = card.querySelectorAll('details');
-            detailsEls.forEach(detail => {
-                detail.addEventListener('toggle', function() {
-                    if (this.open) {
-                        // Close siblings
-                        detailsEls.forEach(sibling => {
-                            if (sibling !== this && sibling.open) {
-                                sibling.open = false;
-                            }
-                        });
-                    }
-                });
-            });
-        });
-
-        // ── Initial state ──────────────────
-        toggleBackToTop();
-        updateActiveNav();
-    </script>
 </body>
 </html>

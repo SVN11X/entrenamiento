@@ -1,0 +1,17 @@
+{
+  "name": "Plan de Entrenamiento Futbolito / Futsal",
+  "short_name": "Entrenamiento",
+  "description": "Plan progresivo de 8 semanas para volver a jugar futbolito/futsal.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0f4f1",
+  "theme_color": "#1a4d2e",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
