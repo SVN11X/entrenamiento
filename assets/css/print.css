@@ -1,21 +1,23 @@
 @media print {
     :root { --green-800: #000000; --slate-800: #111111; }
-    body { background: #ffffff; color: #111111; font-size: 10.5pt; line-height: 1.4; }
-    .nav-bar, .back-to-top, .skip-link, .day-tabs, .week-selector, .ghost-btn { display: none !important; }
-    .header { background: #ffffff !important; color: #111111; }
-    .header::after { display: none; }
-    .header-content { display: block; padding: 0 0 1rem; }
-    .hero-panel { box-shadow: none; border: 1px solid #cccccc; color: #111111; }
-    .hero-list li { color: #111111; background: #ffffff; border: 1px solid #dddddd; }
+    * { box-shadow: none !important; }
+    body { background: #ffffff !important; color: #111111; font-size: 10.5pt; line-height: 1.35; }
+    .nav-bar, .back-to-top, .skip-link, .hero-actions, .toolbar, .week-selector, .nav-toggle { display: none !important; }
+    .site-header { background: #ffffff !important; color: #111111; }
+    .site-header::before, .site-header::after { display: none; }
+    .hero-shell { display: block; padding: 0 0 1rem; }
+    .hero-subtitle, .hero-list li, .mini-scoreboard span { color: #111111 !important; }
+    .hero-panel, .mini-scoreboard, .hero-list li { border: 1px solid #cccccc; background: #ffffff !important; }
     .container { max-width: none; padding: 0; }
-    section { break-inside: avoid; margin-bottom: .8rem; }
-    .card, .kpi-card, .day-chip, .exercise-card, .block-card { box-shadow: none; border: 1px solid #cccccc; }
-    .layout-grid, .exercise-grid, .availability-grid, .kpi-grid, .info-grid, .visual-card { display: block; }
-    .day-panel[hidden] { display: block !important; }
-    .exercise-card { margin-bottom: .6rem; }
-    details:not([open]) .block-content { display: block; }
-    .block-card summary::after { display: none; }
+    .section-block { break-inside: avoid; margin-bottom: .9rem; }
+    .card, .session-card, .objective-card, .recommendation-card, .exercise-card, .day-chip { border: 1px solid #cccccc; background: #ffffff !important; }
+    .kpi-grid, .objective-grid, .availability-grid, .session-grid, .three-column, .exercise-grid, .recommendation-grid, .layout-grid, .purpose-grid { display: block; }
+    .kpi-card, .objective-card, .session-card, .work-card, .exercise-card, .recommendation-card, .day-chip { margin-bottom: .55rem; break-inside: avoid; }
+    .session-details:not([open]), .exercise-card details:not([open]) { display: block; }
+    .session-details:not([open]) > *:not(summary), .exercise-card details:not([open]) > *:not(summary) { display: block; }
+    summary::after { content: '' !important; }
     a[href]::after { content: ''; }
     .table-wrap { overflow: visible; }
-    table { min-width: 0; font-size: 9pt; }
+    table { min-width: 0; font-size: 8.5pt; }
+    th, td { padding: .38rem; }
 }

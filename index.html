@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Entrenamiento - Futbolito / Futsal</title>
-    <meta name="description" content="Plan progresivo de entrenamiento para futbolito/futsal con disponibilidad de cancha lunes, jueves, viernes, sábado y domingo.">
-    <meta name="theme-color" content="#1a4d2e">
-    <meta property="og:title" content="Plan de Entrenamiento para Futbolito / Futsal">
-    <meta property="og:description" content="8 semanas progresivas con días de cancha, descanso de oficina, mejor UX e imágenes por ejercicio.">
+    <title>Plan de Entrenamiento Futbolito | 8 semanas</title>
+    <meta name="description" content="Plataforma estática para organizar un plan de entrenamiento de futbolito de 8 semanas: sesiones, ejercicios, seguimiento, carga física y recomendaciones.">
+    <meta name="theme-color" content="#0f2b1a">
+    <meta property="og:title" content="Plan de Entrenamiento Futbolito">
+    <meta property="og:description" content="Plan profesional de futbolito con sesiones semanales, ejercicios filtrables, seguimiento y recomendaciones.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/img/og-cover.svg">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -20,80 +20,196 @@
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <header class="header">
-        <div class="header-content">
-            <div>
-                <span class="eyebrow">⚽ Futbolito · 8 semanas</span>
-                <h1>Plan de entrenamiento con cancha disponible</h1>
-                <p class="subtitle">Ahora el plan se organiza por una semana real: cancha lunes, jueves, viernes, sábado y domingo; martes y miércoles quedan como días de oficina, descanso y micro-pausas.</p>
+    <header class="site-header" id="inicio">
+        <div class="hero-shell">
+            <div class="hero-copy">
+                <span class="eyebrow">⚽ Futbolito · planificación progresiva</span>
+                <h1>Plan de entrenamiento de futbolito claro, visual y fácil de seguir</h1>
+                <p class="hero-subtitle">Una página simple para GitHub Pages que organiza objetivos, calendario, sesiones, ejercicios, seguimiento y recomendaciones del entrenador en una experiencia moderna y responsive.</p>
+                <div class="hero-actions" aria-label="Acciones principales">
+                    <a class="primary-btn" href="#sesiones">Ver sesiones</a>
+                    <a class="secondary-btn" href="#evaluacion">Revisar seguimiento</a>
+                </div>
             </div>
-            <aside class="hero-panel" aria-label="Resumen del cambio principal">
-                <strong>Resumen de ajustes</strong>
+            <aside class="hero-panel" aria-label="Resumen del plan">
+                <div class="mini-scoreboard">
+                    <span>Plan activo</span>
+                    <strong>8 semanas</strong>
+                </div>
                 <ul class="hero-list">
-                    <li>✅ Nueva disponibilidad: 5 días posibles de cancha.</li>
-                    <li>✅ Sitio menos vertical: selector por día, tarjetas y paneles.</li>
-                    <li>✅ Imágenes SVG locales para comprender ejercicios.</li>
+                    <li><span>🏟️</span><strong>Cancha:</strong> lunes, jueves, viernes, sábado y domingo.</li>
+                    <li><span>🧘</span><strong>Recuperación:</strong> martes y miércoles con descanso o movilidad mínima.</li>
+                    <li><span>📊</span><strong>Control:</strong> asistencia, carga percibida, progreso técnico y observaciones.</li>
                 </ul>
             </aside>
         </div>
     </header>
 
     <nav class="nav-bar" id="navBar" aria-label="Navegación principal">
-        <div class="nav-inner">
-            <a href="#dashboard">📌 Resumen</a>
-            <a href="#selector-semana">🧭 Semana</a>
-            <a href="#plan-diario">📅 Días</a>
-            <a href="#ejercicios-visuales">🖼️ Ejercicios</a>
-            <a href="#seguridad">⚠️ Seguridad</a>
-            <a href="#nutricion">🥗 Nutrición</a>
+        <div class="nav-shell">
+            <a class="brand" href="#inicio" aria-label="Volver al inicio">⚽ Futbolito</a>
+            <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menú</button>
+            <div class="nav-inner" id="mainNav">
+                <a href="#resumen">Resumen</a>
+                <a href="#objetivos">Objetivos</a>
+                <a href="#calendario">Calendario</a>
+                <a href="#sesiones">Sesiones</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#ejercicios">Ejercicios</a>
+                <a href="#evaluacion">Evaluación</a>
+                <a href="#recomendaciones">Recomendaciones</a>
+            </div>
         </div>
     </nav>
 
     <main class="container" id="contenido">
-        <section id="dashboard">
+        <section id="resumen" class="section-block">
             <div class="section-title">
                 <div>
-                    <h2>📌 Resumen de la nueva planificación</h2>
-                    <p>El plan deja de depender principalmente de casa y aprovecha la cancha sin eliminar los descansos necesarios.</p>
+                    <span class="section-kicker">Visión general</span>
+                    <h2>📌 Resumen ejecutivo del plan</h2>
+                    <p>El sitio pasa de ser una página informativa básica a una plataforma de planificación: muestra el propósito del entrenamiento, ordena la semana y permite revisar cada sesión sin saturar al usuario.</p>
                 </div>
             </div>
+
             <div class="kpi-grid">
-                <article class="kpi-card"><span class="kpi-label">Cancha</span><span class="kpi-number">5</span><p class="kpi-text">días disponibles para tocar balón.</p></article>
-                <article class="kpi-card"><span class="kpi-label">Oficina</span><span class="kpi-number">2</span><p class="kpi-text">días sin entrenamiento formal.</p></article>
-                <article class="kpi-card"><span class="kpi-label">Duración</span><span class="kpi-number">8</span><p class="kpi-text">semanas progresivas.</p></article>
-                <article class="kpi-card"><span class="kpi-label">UX</span><span class="kpi-number">Tabs</span><p class="kpi-text">el usuario elige el día, no baja eternamente.</p></article>
+                <article class="kpi-card">
+                    <span class="kpi-label">Objetivo</span>
+                    <strong class="kpi-number">Rendir</strong>
+                    <p class="kpi-text">Mejorar condición física, técnica individual y toma de decisiones en futbolito.</p>
+                </article>
+                <article class="kpi-card">
+                    <span class="kpi-label">Duración</span>
+                    <strong class="kpi-number">8</strong>
+                    <p class="kpi-text">Semanas progresivas, con carga ajustada según fatiga y dolor.</p>
+                </article>
+                <article class="kpi-card">
+                    <span class="kpi-label">Categoría</span>
+                    <strong class="kpi-number">Amateur</strong>
+                    <p class="kpi-text">Pensado para jugadores recreativos que quieren entrenar con método.</p>
+                </article>
+                <article class="kpi-card">
+                    <span class="kpi-label">Frecuencia</span>
+                    <strong class="kpi-number">5+2</strong>
+                    <p class="kpi-text">Cinco días con opción de cancha y dos días de recuperación/oficina.</p>
+                </article>
+            </div>
+
+            <div class="purpose-grid mt-md">
+                <article class="card highlight-card">
+                    <h3>¿Para qué sirve este plan?</h3>
+                    <p>Sirve para ordenar la preparación semanal de futbolito, evitando improvisar. La página permite visualizar qué entrenar cada día, cuánto tiempo dedicar, qué materiales usar y qué indicadores revisar al terminar.</p>
+                </article>
+                <article class="card highlight-card dark-card">
+                    <h3>Enfoque principal</h3>
+                    <p>Progresión técnica y física sin convertir todos los días de cancha en partidos. La idea es alternar técnica, recuperación, fuerza preventiva, táctica y simulación de juego.</p>
+                </article>
             </div>
         </section>
 
-        <section id="disponibilidad">
-            <div class="card">
-                <div class="section-title">
-                    <div>
-                        <h2>📅 Disponibilidad semanal</h2>
-                        <p>La semana queda ordenada de lunes a domingo, con el estado de cada día visible de inmediato.</p>
-                    </div>
+        <section id="objetivos" class="section-block">
+            <div class="section-title">
+                <div>
+                    <span class="section-kicker">Ruta de mejora</span>
+                    <h2>🎯 Objetivos del plan</h2>
+                    <p>Los objetivos se separan en dimensiones para que el entrenador pueda evaluar avances reales y no solo sensaciones generales.</p>
                 </div>
-                <div class="availability-grid" aria-label="Disponibilidad por día">
-                    <div class="day-chip cancha"><strong>Lunes</strong><span>Cancha</span></div>
-                    <div class="day-chip oficina"><strong>Martes</strong><span>Oficina</span></div>
-                    <div class="day-chip oficina"><strong>Miércoles</strong><span>Oficina</span></div>
-                    <div class="day-chip cancha"><strong>Jueves</strong><span>Cancha</span></div>
-                    <div class="day-chip cancha"><strong>Viernes</strong><span>Cancha</span></div>
-                    <div class="day-chip cancha"><strong>Sábado</strong><span>Cancha</span></div>
-                    <div class="day-chip cancha"><strong>Domingo</strong><span>Cancha</span></div>
-                </div>
+            </div>
+            <div class="objective-grid">
+                <article class="objective-card">
+                    <span class="objective-icon">🏃</span>
+                    <h3>Condición física</h3>
+                    <p>Mejorar resistencia específica, aceleraciones cortas, cambios de dirección y tolerancia a esfuerzos intermitentes.</p>
+                    <ul>
+                        <li>Completar bloques de 5–12 minutos sin caída brusca de ritmo.</li>
+                        <li>Recuperar respiración en pausas de 60–90 segundos.</li>
+                    </ul>
+                </article>
+                <article class="objective-card">
+                    <span class="objective-icon">🎛️</span>
+                    <h3>Técnica individual</h3>
+                    <p>Aumentar seguridad en conducción, pase, control orientado, remate y uso de pierna no dominante.</p>
+                    <ul>
+                        <li>Ejecutar pases rasantes con dirección definida.</li>
+                        <li>Conducir mirando el balón y levantando la vista por momentos.</li>
+                    </ul>
+                </article>
+                <article class="objective-card">
+                    <span class="objective-icon">🧠</span>
+                    <h3>Táctica simple</h3>
+                    <p>Favorecer decisiones básicas de futbolito: pasar, perfilarse, dar apoyo, cerrar espacios y finalizar jugadas.</p>
+                    <ul>
+                        <li>Elegir cuándo acelerar y cuándo conservar el balón.</li>
+                        <li>Ocupar mejor los espacios reducidos.</li>
+                    </ul>
+                </article>
+                <article class="objective-card">
+                    <span class="objective-icon">🛡️</span>
+                    <h3>Prevención</h3>
+                    <p>Integrar movilidad, core y fuerza preventiva para reducir sobrecarga de espalda baja, glúteos, rodillas y tobillos.</p>
+                    <ul>
+                        <li>Registrar dolor y fatiga después de cada sesión.</li>
+                        <li>Aplicar descarga cuando la escala de dolor lo indique.</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <section id="selector-semana">
-            <div class="card">
-                <div class="section-title">
+        <section id="calendario" class="section-block">
+            <div class="section-title">
+                <div>
+                    <span class="section-kicker">Organización semanal</span>
+                    <h2>📅 Calendario semanal</h2>
+                    <p>La semana se organiza con cinco días posibles de cancha, pero con intensidades distintas. Tener cancha no significa entrenar fuerte todos los días.</p>
+                </div>
+            </div>
+
+            <div class="availability-grid" aria-label="Disponibilidad semanal">
+                <div class="day-chip cancha"><strong>Lunes</strong><span>Cancha</span><small>Base + conducción</small></div>
+                <div class="day-chip oficina"><strong>Martes</strong><span>Oficina</span><small>Descanso activo</small></div>
+                <div class="day-chip oficina"><strong>Miércoles</strong><span>Oficina</span><small>Recuperación</small></div>
+                <div class="day-chip cancha"><strong>Jueves</strong><span>Cancha</span><small>Agilidad + pase</small></div>
+                <div class="day-chip cancha baja"><strong>Viernes</strong><span>Baja</span><small>Técnica suave</small></div>
+                <div class="day-chip cancha alta"><strong>Sábado</strong><span>Fuerte</span><small>Remate + juego</small></div>
+                <div class="day-chip cancha variable"><strong>Domingo</strong><span>Flexible</span><small>Simulación/descarga</small></div>
+            </div>
+
+            <div class="card mt-md">
+                <div class="table-head">
                     <div>
-                        <h2>🧭 Selector de semana</h2>
-                        <p>Permite mantener el mismo plan, pero ajustando intensidad y foco según la etapa.</p>
+                        <h3>Planificación semanal base</h3>
+                        <p>Tabla optimizada para lectura en celular mediante desplazamiento horizontal.</p>
                     </div>
                 </div>
-                <div class="week-selector" role="group" aria-label="Seleccionar semana">
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Tipo</th>
+                                <th>Enfoque</th>
+                                <th>Duración</th>
+                                <th>Intensidad</th>
+                                <th>Decisión del entrenador</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Lunes</td><td>Mixto</td><td>Base aeróbica, conducción y fuerza preventiva</td><td>45–60 min</td><td>Media</td><td>Controlar técnica antes de aumentar volumen.</td></tr>
+                            <tr><td>Martes</td><td>Recuperación</td><td>Descanso real y micro-pausas</td><td>0–8 min</td><td>Muy baja</td><td>No compensar con entrenamiento extra.</td></tr>
+                            <tr><td>Miércoles</td><td>Recuperación</td><td>Movilidad mínima o descanso total</td><td>0–8 min</td><td>Muy baja</td><td>Preparar el bloque jueves-domingo.</td></tr>
+                            <tr><td>Jueves</td><td>Técnico/físico</td><td>Agilidad, pase y core</td><td>45–60 min</td><td>Media</td><td>Evitar giros bruscos si hay dolor.</td></tr>
+                            <tr><td>Viernes</td><td>Técnico</td><td>Técnica suave y recuperación activa</td><td>30–45 min</td><td>Baja</td><td>Salir mejor de lo que se llegó.</td></tr>
+                            <tr><td>Sábado</td><td>Mixto</td><td>Remate, decisiones y pichanga controlada</td><td>45–70 min</td><td>Media-alta</td><td>Concentrar intensidad de la semana.</td></tr>
+                            <tr><td>Domingo</td><td>Táctico/variable</td><td>Simulación o descarga con balón</td><td>35–60 min</td><td>Variable</td><td>Decidir según fatiga del sábado.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card mt-md">
+                <h3>🧭 Selector de etapa</h3>
+                <p>Usa estos botones para visualizar el foco de cada semana. La selección queda guardada en el navegador.</p>
+                <div class="week-selector mt-sm" role="group" aria-label="Seleccionar semana">
                     <button class="week-btn" data-week="1" type="button">Sem 1</button>
                     <button class="week-btn" data-week="2" type="button">Sem 2</button>
                     <button class="week-btn" data-week="3" type="button">Sem 3</button>
@@ -107,317 +223,425 @@
             </div>
         </section>
 
-        <section id="plan-diario">
+        <section id="sesiones" class="section-block">
             <div class="section-title">
                 <div>
-                    <h2>📅 Plan diario por pestañas</h2>
-                    <p>Este es el cambio principal de experiencia usuario: en vez de mostrar todos los días hacia abajo, el usuario selecciona el día que quiere revisar.</p>
-                </div>
-                <button class="ghost-btn" type="button" id="openDayBlocks">Abrir bloques del día</button>
-            </div>
-            <div class="card" style="margin-bottom: .85rem;">
-                <div class="day-tabs" role="tablist" aria-label="Días del plan">
-                    <button class="day-tab" role="tab" type="button" data-day="lunes">Lun · Cancha</button>
-                    <button class="day-tab" role="tab" type="button" data-day="martes">Mar · Oficina</button>
-                    <button class="day-tab" role="tab" type="button" data-day="miercoles">Mié · Oficina</button>
-                    <button class="day-tab" role="tab" type="button" data-day="jueves">Jue · Cancha</button>
-                    <button class="day-tab" role="tab" type="button" data-day="viernes">Vie · Cancha</button>
-                    <button class="day-tab" role="tab" type="button" data-day="sabado">Sáb · Cancha</button>
-                    <button class="day-tab" role="tab" type="button" data-day="domingo">Dom · Cancha</button>
+                    <span class="section-kicker">Entrenamiento diario</span>
+                    <h2>🗂️ Sesiones de entrenamiento</h2>
+                    <p>Cada sesión incluye objetivo, duración, materiales, estructura, indicadores y observaciones. Puedes filtrar por tipo de trabajo.</p>
                 </div>
             </div>
-            <article class="day-panel" data-day="lunes" >
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Lunes · Cancha: base + conducción + fuerza preventiva</h3>
-                    <p>Inicio de semana con cancha. El objetivo es crear base física, tocar balón y fortalecer sin llegar destruido al jueves.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-green">Cancha</span><span class="badge badge-blue">45–60 min</span><span class="badge badge-orange">Media</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Cancha</strong></div><div class="info-pill"><span>Foco</span><strong>Base + balón</strong></div><div class="info-pill"><span>Límite</span><strong>6/10 semanas 1–2</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Calentamiento estándar</span><span class="block-meta">8–12 min</span></span></summary>
-    <div class="block-content"><ul><li>Movilidad articular: tobillos, rodillas, cadera, hombros y muñecas.</li><li>Activación glútea: puente 15 reps, almeja 12 por lado y bird-dog 8 por lado.</li><li>Con balón: conducción suave 2 min + 20 pases cortos antes de acelerar.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Resistencia con balón</span><span class="block-meta">12–18 min</span></span></summary>
-    <div class="block-content"><ul><li>6–8 ciclos: conducción 45–60 s + trote/caminata 60 s.</li><li>Semanas 1–2: sin sprint máximo.</li><li>Semanas 5–8: agrega cambios de dirección de 5–8 m.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Fuerza preventiva en cancha</span><span class="block-meta">12–16 min</span></span></summary>
-    <div class="block-content"><ul><li>Sentadilla controlada 3×10–15.</li><li>Zancada hacia atrás 2–3×8 por pierna.</li><li>Puente de glúteos 3×12.</li><li>Plancha frontal 3×25–40 s.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">4</span><span><span class="block-title">Técnica simple para cerrar</span><span class="block-meta">8–10 min</span></span></summary>
-    <div class="block-content"><ul><li>Conducción zigzag 4 vueltas.</li><li>Pase corto a pared u objetivo: 30–50 repeticiones según semana.</li><li>Vuelta a la calma con flexor de cadera, piriforme y gemelos.</li></ul></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/calentamiento.svg" alt="Calentamiento antes de acelerar" loading="lazy"><div><h4>Calentamiento antes de acelerar</h4><p>Prepara articulaciones, glúteos y temperatura corporal antes de tocar balón con más intensidad.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/conduccion-zigzag.svg" alt="Conducción en zigzag" loading="lazy"><div><h4>Conducción en zigzag</h4><p>Balón cerca del pie, mirada arriba cada cierto tiempo y cambios de dirección controlados.</p></div></article>
-        </aside>
-    </div>
-</article><article class="day-panel" data-day="martes" hidden>
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Martes · Oficina: descanso real + micro-pausas</h3>
-                    <p>Día ocupado. No se programa entrenamiento formal para no acumular fatiga ni estrés.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-blue">Oficina</span><span class="badge badge-green">0–8 min</span><span class="badge badge-purple">Descanso</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Oficina</strong></div><div class="info-pill"><span>Foco</span><strong>Recuperar</strong></div><div class="info-pill"><span>Entreno</span><strong>No formal</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Descanso principal</span><span class="block-meta">Todo el día</span></span></summary>
-    <div class="block-content"><p>No hay sesión de cancha ni fuerza. Cuenta como parte del progreso porque permite adaptación.</p></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Micro-pausas si estás sentado</span><span class="block-meta">2–3 min cada 60–90 min</span></span></summary>
-    <div class="block-content"><ul><li>Levántate y camina 1–2 min.</li><li>10 rotaciones de cadera.</li><li>10 sentadillas suaves o 10 puentes de glúteos.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Movilidad mínima opcional</span><span class="block-meta">5–8 min</span></span></summary>
-    <div class="block-content"><ul><li>Gato-vaca 10 reps.</li><li>Flexor de cadera 30 s por lado.</li><li>Piriforme sentado 30 s por lado.</li></ul></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/oficina.svg" alt="Día de oficina" loading="lazy"><div><h4>Día de oficina</h4><p>La micro-pausa evita rigidez sin convertir el día en entrenamiento.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/movilidad.svg" alt="Movilidad mínima" loading="lazy"><div><h4>Movilidad mínima</h4><p>Hazlo suave: el objetivo es soltar, no cansarte.</p></div></article>
-        </aside>
-    </div>
-</article><article class="day-panel" data-day="miercoles" hidden>
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Miércoles · Oficina: descanso total o movilidad mínima</h3>
-                    <p>Segundo día ocupado. Se mantiene como descanso para llegar mejor al bloque de cancha jueves–domingo.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-blue">Oficina</span><span class="badge badge-green">0–8 min</span><span class="badge badge-purple">Recuperación</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Oficina</strong></div><div class="info-pill"><span>Foco</span><strong>Bajar carga</strong></div><div class="info-pill"><span>Prioridad</span><strong>Sueño + movilidad</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Descanso total recomendado</span><span class="block-meta">Principal</span></span></summary>
-    <div class="block-content"><p>Sin entrenamiento formal. Aprovecha para dormir, hidratarte y bajar rigidez.</p></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Protocolo de espalda/glúteo</span><span class="block-meta">5 min opcional</span></span></summary>
-    <div class="block-content"><ul><li>Puente de glúteos 15 reps.</li><li>Bird-dog 8 por lado.</li><li>90/90 de cadera 45 s por lado.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Preparación para jueves</span><span class="block-meta">Noche</span></span></summary>
-    <div class="block-content"><p>Deja lista ropa, agua y balón. El jueves vuelve la cancha, pero sin compensar los días de oficina haciendo de más.</p></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/oficina.svg" alt="Descanso útil" loading="lazy"><div><h4>Descanso útil</h4><p>No entrenar también es una decisión del plan.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/recuperacion.svg" alt="Llegar fresco al jueves" loading="lazy"><div><h4>Llegar fresco al jueves</h4><p>La recuperación mejora la calidad de los días de cancha.</p></div></article>
-        </aside>
-    </div>
-</article><article class="day-panel" data-day="jueves" hidden>
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Jueves · Cancha: agilidad + pase + core</h3>
-                    <p>Vuelta a cancha después de dos días de oficina. Trabajo de pies, pases y estabilidad.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-green">Cancha</span><span class="badge badge-blue">45–60 min</span><span class="badge badge-orange">Media</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Cancha</strong></div><div class="info-pill"><span>Foco</span><strong>Agilidad + pase</strong></div><div class="info-pill"><span>Límite</span><strong>Sin giro brusco si duele</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Calentamiento con balón</span><span class="block-meta">8–12 min</span></span></summary>
-    <div class="block-content"><ul><li>Movilidad articular: tobillos, rodillas, cadera, hombros y muñecas.</li><li>Activación glútea: puente 15 reps, almeja 12 por lado y bird-dog 8 por lado.</li><li>Con balón: conducción suave 2 min + 20 pases cortos antes de acelerar.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Agilidad sin impacto excesivo</span><span class="block-meta">10–12 min</span></span></summary>
-    <div class="block-content"><ul><li>Desplazamiento lateral 4×25 s.</li><li>Pasos rápidos adelante-atrás 4×20 s.</li><li>Aceleración progresiva 5 m + frenada suave 4–6 reps.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Pase contra pared u objetivo</span><span class="block-meta">10–14 min</span></span></summary>
-    <div class="block-content"><ul><li>Derecha: 30–50 pases.</li><li>Izquierda: 30–50 pases.</li><li>Alternado: 30–50 pases.</li><li>Control orientado: 15–20 por lado.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">4</span><span><span class="block-title">Core estable</span><span class="block-meta">8–10 min</span></span></summary>
-    <div class="block-content"><ul><li>Plancha frontal 3×30 s.</li><li>Plancha lateral 2×20–30 s por lado.</li><li>Dead bug 3×8 por lado.</li></ul></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/agilidad-lateral.svg" alt="Agilidad lateral" loading="lazy"><div><h4>Agilidad lateral</h4><p>Rodillas semiflexionadas, centro de gravedad bajo y frenadas suaves.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/pase-pared.svg" alt="Pase contra pared" loading="lazy"><div><h4>Pase contra pared</h4><p>Tobillo firme, pase rasante y control antes de acelerar.</p></div></article>
-        </aside>
-    </div>
-</article><article class="day-panel" data-day="viernes" hidden>
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Viernes · Cancha: técnica suave + recuperación activa</h3>
-                    <p>Día de cancha, pero de baja carga. Sirve para tocar balón y preparar el fin de semana sin llegar pesado.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-green">Cancha</span><span class="badge badge-blue">30–45 min</span><span class="badge badge-green">Baja</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Cancha</strong></div><div class="info-pill"><span>Foco</span><strong>Técnica suave</strong></div><div class="info-pill"><span>Regla</span><strong>No competir fuerte</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Entrada en calor suave</span><span class="block-meta">8 min</span></span></summary>
-    <div class="block-content"><ul><li>Trote suave o caminata rápida 3 min.</li><li>Movilidad de cadera y tobillo.</li><li>Conducción libre 2 min.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Técnica sin fatiga</span><span class="block-meta">15–20 min</span></span></summary>
-    <div class="block-content"><ul><li>Conducción en línea y zigzag suave.</li><li>Pases cortos a objetivo.</li><li>Control con planta e interior-exterior.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Descarga y movilidad</span><span class="block-meta">8–12 min</span></span></summary>
-    <div class="block-content"><ul><li>Flexor de cadera 40 s por lado.</li><li>Piriforme/glúteo 40 s por lado.</li><li>Gemelos 40 s por lado.</li><li>Respiración 1 min.</li></ul></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/recuperacion.svg" alt="Recuperación activa" loading="lazy"><div><h4>Recuperación activa</h4><p>Debe sentirse como soltar las piernas, no como una sesión dura.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/movilidad.svg" alt="Movilidad de cadera" loading="lazy"><div><h4>Movilidad de cadera</h4><p>Clave para llegar mejor al sábado y domingo.</p></div></article>
-        </aside>
-    </div>
-</article><article class="day-panel" data-day="sabado" hidden>
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Sábado · Cancha: técnica + remate + pichanga controlada</h3>
-                    <p>Día fuerte de la semana. Aquí se concentra el trabajo más parecido al futbolito real.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-green">Cancha</span><span class="badge badge-blue">45–70 min</span><span class="badge badge-orange">Media-alta</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Cancha</strong></div><div class="info-pill"><span>Foco</span><strong>Remate + juego</strong></div><div class="info-pill"><span>Cuidado</span><strong>No ir 100% todo el partido</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Calentamiento completo</span><span class="block-meta">10–12 min</span></span></summary>
-    <div class="block-content"><ul><li>Movilidad articular: tobillos, rodillas, cadera, hombros y muñecas.</li><li>Activación glútea: puente 15 reps, almeja 12 por lado y bird-dog 8 por lado.</li><li>Con balón: conducción suave 2 min + 20 pases cortos antes de acelerar.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Dominio + pase de profundidad</span><span class="block-meta">15–20 min</span></span></summary>
-    <div class="block-content"><ul><li>Zigzag con conos/botellas 5 min.</li><li>Pase filtrado entre dos objetos: 15 por pie.</li><li>Pase largo suave si hay espacio: 10–20 intentos.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Remate técnico</span><span class="block-meta">10–12 min</span></span></summary>
-    <div class="block-content"><ul><li>Balón quieto 10–15.</li><li>Tras conducción corta 10.</li><li>Pierna no dominante 8–10.</li><li>Colocado a esquinas 6 por lado.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">4</span><span><span class="block-title">Pichanga controlada</span><span class="block-meta">Variable</span></span></summary>
-    <div class="block-content"><ul><li>Semanas 1–2: bloques de 5–8 min.</li><li>Semanas 3–4: bloques de 8–10 min.</li><li>Semanas 5–6: bloques de 10–12 min.</li><li>Semanas 7–8: más continuidad, sin perseguir todo.</li></ul></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/remate.svg" alt="Remate técnico" loading="lazy"><div><h4>Remate técnico</h4><p>Primero precisión y postura; después potencia.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/pichanga.svg" alt="Pichanga controlada" loading="lazy"><div><h4>Pichanga controlada</h4><p>Jugar con foco táctico: pase simple, ubicación y cuándo acelerar.</p></div></article>
-        </aside>
-    </div>
-</article><article class="day-panel" data-day="domingo" hidden>
-    <div class="layout-grid">
-        <div class="card">
-            <div class="session-head">
-                <div>
-                    <h3>Domingo · Cancha: simulación o descarga con balón</h3>
-                    <p>Día flexible. Si el sábado fue intenso, baja carga. Si no hubo pichanga, puedes hacer simulación controlada.</p>
-                </div>
-                <div class="tag-row"><span class="badge badge-green">Cancha</span><span class="badge badge-blue">35–60 min</span><span class="badge badge-purple">Variable</span></div>
-            </div>
-            <div class="info-grid"><div class="info-pill"><span>Lugar</span><strong>Cancha</strong></div><div class="info-pill"><span>Foco</span><strong>Transferencia</strong></div><div class="info-pill"><span>Decisión</span><strong>Según fatiga del sábado</strong></div></div>
-            <div class="block-list"><details class="block-card" open>
-    <summary><span class="block-num">1</span><span><span class="block-title">Chequeo rápido antes de iniciar</span><span class="block-meta">2 min</span></span></summary>
-    <div class="block-content"><ul><li>Fatiga 0–10.</li><li>Dolor lumbar/glúteo 0–10.</li><li>Si hay dolor 4/10 o más: solo movilidad y técnica suave.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">2</span><span><span class="block-title">Opción A: si estás fresco</span><span class="block-meta">35–60 min</span></span></summary>
-    <div class="block-content"><ul><li>Técnica rápida 10 min.</li><li>Intervalos con balón 6–8 ciclos.</li><li>Remate y definición 8–10 min.</li><li>Vuelta a la calma 5 min.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">3</span><span><span class="block-title">Opción B: si el sábado fue fuerte</span><span class="block-meta">20–35 min</span></span></summary>
-    <div class="block-content"><ul><li>Conducción suave.</li><li>Pases cortos.</li><li>Movilidad de cadera.</li><li>Sin sprints ni remates fuertes.</li></ul></div>
-</details>
-<details class="block-card" >
-    <summary><span class="block-num">4</span><span><span class="block-title">Registro semanal</span><span class="block-meta">3 min</span></span></summary>
-    <div class="block-content"><p>Anota minutos jugados, fatiga final, dolor lumbar/glúteo y confianza con balón. Ese registro guía la semana siguiente.</p></div>
-</details></div>
-        </div>
-        <aside class="visual-card" aria-label="Apoyos visuales para la sesión">
-            <article class="exercise-card"><img src="assets/img/exercises/pichanga.svg" alt="Simulación de juego" loading="lazy"><div><h4>Simulación de juego</h4><p>Usa intervalos para parecerte al partido sin agotarte de golpe.</p></div></article>
-<article class="exercise-card"><img src="assets/img/exercises/recuperacion.svg" alt="Descarga si hace falta" loading="lazy"><div><h4>Descarga si hace falta</h4><p>Si el sábado fue duro, el domingo debe ayudarte a recuperar.</p></div></article>
-        </aside>
-    </div>
-</article>
-        </section>
 
-        <section id="ejercicios-visuales">
-            <div class="section-title">
+            <div class="toolbar card" aria-label="Filtros de sesiones">
                 <div>
-                    <h2>🖼️ Biblioteca visual de ejercicios</h2>
-                    <p>Se agregaron imágenes SVG locales para que la página no dependa de internet y funcione bien en GitHub Pages/PWA.</p>
+                    <strong>Filtrar sesiones</strong>
+                    <p>Selecciona un enfoque para mostrar solo las sesiones relacionadas.</p>
                 </div>
+                <div class="filter-row" role="group" aria-label="Filtro por tipo de entrenamiento">
+                    <button class="filter-btn active" data-filter="all" data-target="session" type="button">Todo</button>
+                    <button class="filter-btn" data-filter="fisico" data-target="session" type="button">Físico</button>
+                    <button class="filter-btn" data-filter="tecnico" data-target="session" type="button">Técnico</button>
+                    <button class="filter-btn" data-filter="tactico" data-target="session" type="button">Táctico</button>
+                    <button class="filter-btn" data-filter="mixto" data-target="session" type="button">Mixto</button>
+                    <button class="filter-btn" data-filter="recuperacion" data-target="session" type="button">Recuperación</button>
+                </div>
+                <button class="ghost-btn" type="button" id="toggleSessions">Abrir/cerrar detalles</button>
             </div>
-            <div class="exercise-grid">
-                <article class="exercise-card"><img src="assets/img/exercises/calentamiento.svg" alt="Calentamiento" loading="lazy"><div><h4>Calentamiento</h4><p>Movilidad + activación antes de esfuerzos fuertes.</p></div></article>
-                <article class="exercise-card"><img src="assets/img/exercises/conduccion-zigzag.svg" alt="Conducción zigzag" loading="lazy"><div><h4>Conducción zigzag</h4><p>Trabajo de control, mirada y cambios de dirección.</p></div></article>
-                <article class="exercise-card"><img src="assets/img/exercises/pase-pared.svg" alt="Pase contra pared" loading="lazy"><div><h4>Pase contra pared</h4><p>Repetición técnica con control orientado.</p></div></article>
-                <article class="exercise-card"><img src="assets/img/exercises/remate.svg" alt="Remate" loading="lazy"><div><h4>Remate</h4><p>Definición con precisión antes que potencia.</p></div></article>
-                <article class="exercise-card"><img src="assets/img/exercises/agilidad-lateral.svg" alt="Agilidad lateral" loading="lazy"><div><h4>Agilidad lateral</h4><p>Desplazamientos cortos y frenadas controladas.</p></div></article>
-                <article class="exercise-card"><img src="assets/img/exercises/fuerza-core.svg" alt="Core estable" loading="lazy"><div><h4>Core estable</h4><p>Prevención para espalda baja y control corporal.</p></div></article>
+
+            <div class="session-grid mt-md">
+                <article class="session-card" data-training-type="mixto fisico tecnico" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Lunes</span>
+                        <div class="tag-row"><span class="badge badge-green">Mixto</span><span class="badge badge-blue">45–60 min</span></div>
+                    </div>
+                    <h3>Base aeróbica + conducción + fuerza preventiva</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> iniciar la semana con volumen controlado, mejorar control de balón y activar musculatura protectora.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Balón, conos/botellas, agua</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>1–6</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>5–6/10</strong></div>
+                    </div>
+                    <details class="session-details" open>
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><ul><li>Movilidad articular: tobillos, rodillas, cadera y hombros.</li><li>Activación: puente de glúteos, bird-dog y skipping suave.</li><li>Conducción libre 2 minutos.</li></ul></div>
+                            <div><h4>Parte principal</h4><ul><li>6–8 ciclos: conducción 45–60 s + recuperación 60 s.</li><li>Zigzag con balón en 4–6 conos.</li><li>Fuerza preventiva: sentadilla, zancada atrás, plancha frontal.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><ul><li>Caminata 3 minutos.</li><li>Flexor de cadera, piriforme y gemelos 30–40 s por lado.</li></ul></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>Mantiene balón cerca del pie durante conducción.</li><li>Termina con fatiga máxima 6/10.</li><li>No aparece dolor lumbar o baja durante la sesión.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> priorizar postura y control. Si el jugador se desordena, disminuir velocidad antes de aumentar distancia.</div>
+                    </details>
+                </article>
+
+                <article class="session-card" data-training-type="recuperacion" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Martes</span>
+                        <div class="tag-row"><span class="badge badge-purple">Recuperación</span><span class="badge badge-blue">0–8 min</span></div>
+                    </div>
+                    <h3>Descanso real + micro-pausas</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> permitir adaptación física y reducir rigidez por jornada de oficina.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Ninguno</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>Individual</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>1–2/10</strong></div>
+                    </div>
+                    <details class="session-details">
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><p>No aplica. Es día de descanso.</p></div>
+                            <div><h4>Parte principal</h4><ul><li>Caminar 2 minutos cada 60–90 minutos sentado.</li><li>Rotaciones de cadera y movilidad de columna.</li><li>Respiración profunda 1 minuto.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><p>Estiramiento suave si hay rigidez.</p></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>No aumenta fatiga.</li><li>Disminuye sensación de rigidez.</li><li>Llega al miércoles sin dolor acumulado.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> este día también entrena la disciplina: no hacer de más.</div>
+                    </details>
+                </article>
+
+                <article class="session-card" data-training-type="recuperacion" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Miércoles</span>
+                        <div class="tag-row"><span class="badge badge-purple">Recuperación</span><span class="badge badge-blue">0–8 min</span></div>
+                    </div>
+                    <h3>Descanso total o movilidad mínima</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> llegar al jueves con piernas disponibles y menor carga acumulada.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Mat opcional</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>Individual</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>1–2/10</strong></div>
+                    </div>
+                    <details class="session-details">
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><p>No obligatorio.</p></div>
+                            <div><h4>Parte principal</h4><ul><li>Puente de glúteos 15 repeticiones.</li><li>Bird-dog 8 por lado.</li><li>Movilidad 90/90 de cadera 45 s por lado.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><p>Respiración nasal 60 segundos.</p></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>Sensación corporal más suelta.</li><li>No termina cansado.</li><li>Duerme y se hidrata mejor.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> preparar ropa, agua y balón para no llegar apurado al jueves.</div>
+                    </details>
+                </article>
+
+                <article class="session-card" data-training-type="fisico tecnico" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Jueves</span>
+                        <div class="tag-row"><span class="badge badge-orange">Físico/técnico</span><span class="badge badge-blue">45–60 min</span></div>
+                    </div>
+                    <h3>Agilidad + pase + core estable</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> mejorar desplazamientos cortos, pase rasante y estabilidad corporal.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Balón, conos, pared/arco</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>1–8</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>6–7/10</strong></div>
+                    </div>
+                    <details class="session-details">
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><ul><li>Movilidad dinámica 6 min.</li><li>Conducción suave 2 min.</li><li>20 pases cortos progresivos.</li></ul></div>
+                            <div><h4>Parte principal</h4><ul><li>Desplazamiento lateral 4×25 s.</li><li>Aceleración 5 m + frenada controlada 6 reps.</li><li>Pase a pared: 30–50 por pie.</li><li>Core: plancha frontal/lateral y dead bug.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><ul><li>Caminata suave.</li><li>Estiramientos de cadera y gemelos.</li></ul></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>Frena sin perder equilibrio.</li><li>Pase rasante llega al objetivo.</li><li>Mantiene tronco estable en core.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> evitar giros agresivos si aparece molestia de rodilla, tobillo o espalda.</div>
+                    </details>
+                </article>
+
+                <article class="session-card" data-training-type="tecnico recuperacion" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Viernes</span>
+                        <div class="tag-row"><span class="badge badge-green">Técnico suave</span><span class="badge badge-blue">30–45 min</span></div>
+                    </div>
+                    <h3>Técnica suave + recuperación activa</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> tocar balón sin acumular fatiga antes del fin de semana.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Balón, conos opcionales</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>1–4</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>3–4/10</strong></div>
+                    </div>
+                    <details class="session-details">
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><ul><li>Caminata/trote suave 3 min.</li><li>Movilidad de cadera y tobillo.</li></ul></div>
+                            <div><h4>Parte principal</h4><ul><li>Conducción lineal y zigzag suave.</li><li>Pases cortos a objetivo.</li><li>Controles con planta, interior y exterior.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><ul><li>Movilidad de cadera 8 min.</li><li>Respiración 1 min.</li></ul></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>Termina más suelto que al inicio.</li><li>No realiza sprints ni remates fuertes.</li><li>Controla balón sin ansiedad.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> viernes no se gana por intensidad, se gana por recuperación y calidad técnica.</div>
+                    </details>
+                </article>
+
+                <article class="session-card" data-training-type="mixto tecnico tactico fisico" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Sábado</span>
+                        <div class="tag-row"><span class="badge badge-red">Día fuerte</span><span class="badge badge-blue">45–70 min</span></div>
+                    </div>
+                    <h3>Técnica + remate + pichanga controlada</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> transferir técnica y condición física a situaciones reales de juego.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Balón, arco, petos, conos</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>2–12</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>7–8/10</strong></div>
+                    </div>
+                    <details class="session-details">
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><ul><li>Activación completa 10–12 min.</li><li>Pases cortos y conducción progresiva.</li></ul></div>
+                            <div><h4>Parte principal</h4><ul><li>Zigzag + pase filtrado.</li><li>Remate tras conducción corta.</li><li>Juego reducido 3v3, 4v4 o 5v5 por bloques.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><ul><li>Caminata 4 min.</li><li>Estiramientos suaves y registro de fatiga.</li></ul></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>Decide antes de recibir.</li><li>Remata con postura estable.</li><li>Respeta pausas entre bloques.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> concentrar la intensidad aquí, pero sin jugar cada pelota como si fuera la final del mundo.</div>
+                    </details>
+                </article>
+
+                <article class="session-card" data-training-type="tactico tecnico recuperacion" data-session-card>
+                    <div class="session-top">
+                        <span class="session-day">Domingo</span>
+                        <div class="tag-row"><span class="badge badge-purple">Variable</span><span class="badge badge-blue">35–60 min</span></div>
+                    </div>
+                    <h3>Simulación de partido o descarga con balón</h3>
+                    <p class="session-goal"><strong>Objetivo principal:</strong> decidir la carga según el sábado: transferencia si hay energía, descarga si hay fatiga.</p>
+                    <div class="info-grid">
+                        <div class="info-pill"><span>Materiales</span><strong>Balón, conos, arco opcional</strong></div>
+                        <div class="info-pill"><span>Jugadores</span><strong>1–10</strong></div>
+                        <div class="info-pill"><span>Intensidad</span><strong>Variable</strong></div>
+                    </div>
+                    <details class="session-details">
+                        <summary>Ver desarrollo completo</summary>
+                        <div class="detail-grid">
+                            <div><h4>Calentamiento</h4><ul><li>Chequeo de fatiga y dolor 0–10.</li><li>Movilidad y conducción suave.</li></ul></div>
+                            <div><h4>Parte principal</h4><ul><li>Opción A: simulación con intervalos si está fresco.</li><li>Opción B: técnica baja y movilidad si el sábado fue fuerte.</li><li>Registro semanal al finalizar.</li></ul></div>
+                            <div><h4>Vuelta a la calma</h4><ul><li>Movilidad general 6 min.</li><li>Respiración y estiramientos suaves.</li></ul></div>
+                            <div><h4>Indicadores de logro</h4><ul><li>Elige carga según evidencia, no por impulso.</li><li>Anota minutos, fatiga y dolor.</li><li>Llega al lunes sin sobrecarga.</li></ul></div>
+                        </div>
+                        <div class="coach-note"><strong>Observación del entrenador:</strong> domingo es el día inteligente. No todo progreso se mide por terminar agotado.</div>
+                    </details>
+                </article>
             </div>
         </section>
 
-        <section id="seguridad">
+        <section id="trabajos" class="section-block">
+            <div class="section-title">
+                <div>
+                    <span class="section-kicker">Componentes del rendimiento</span>
+                    <h2>🧩 Trabajo físico, técnico y táctico</h2>
+                    <p>Estas secciones explican qué se está entrenando y cómo progresar durante las ocho semanas.</p>
+                </div>
+            </div>
+            <div class="three-column">
+                <article class="card work-card">
+                    <span class="work-icon">💪</span>
+                    <h3>Trabajo físico</h3>
+                    <p>Se enfoca en resistencia intermitente, agilidad, frenadas, cambios de dirección y fuerza preventiva.</p>
+                    <div class="progression-list">
+                        <div><strong>Sem 1–2</strong><span>Adaptación, técnica lenta y control postural.</span></div>
+                        <div><strong>Sem 3–4</strong><span>Aumentar volumen de repeticiones y pausas controladas.</span></div>
+                        <div><strong>Sem 5–6</strong><span>Introducir bloques exigentes de corta duración.</span></div>
+                        <div><strong>Sem 7–8</strong><span>Transferir a juego reducido y simulaciones.</span></div>
+                    </div>
+                </article>
+                <article class="card work-card">
+                    <span class="work-icon">🎯</span>
+                    <h3>Trabajo técnico</h3>
+                    <p>Busca calidad de ejecución: primer control, pase rasante, conducción cercana, remate colocado y pierna no dominante.</p>
+                    <ul class="check-list">
+                        <li>El pase debe llegar al objetivo con balón bajo.</li>
+                        <li>La conducción debe alternar mirada al balón y mirada al espacio.</li>
+                        <li>El remate se entrena primero colocado, luego con potencia.</li>
+                    </ul>
+                </article>
+                <article class="card work-card">
+                    <span class="work-icon">🧠</span>
+                    <h3>Trabajo táctico</h3>
+                    <p>Integra decisiones simples de futbolito: apoyar, pasar y moverse, cerrar línea de pase y finalizar cuando hay ventaja.</p>
+                    <ul class="check-list">
+                        <li>Antes de recibir: mirar dónde está el compañero libre.</li>
+                        <li>Después de pasar: ofrecer apoyo o arrastrar marca.</li>
+                        <li>Sin balón: cerrar espacios y volver a posición.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="ejercicios" class="section-block">
+            <div class="section-title">
+                <div>
+                    <span class="section-kicker">Biblioteca práctica</span>
+                    <h2>🏋️ Ejercicios detallados</h2>
+                    <p>Cada tarjeta incluye objetivo, tiempo, espacio, cantidad de jugadores, instrucciones, variantes, errores comunes y recomendaciones del entrenador.</p>
+                </div>
+            </div>
+
+            <div class="toolbar card" aria-label="Filtros de ejercicios">
+                <div>
+                    <strong>Filtrar ejercicios</strong>
+                    <p>Útil para preparar una sesión rápida según el enfoque del día.</p>
+                </div>
+                <div class="filter-row" role="group" aria-label="Filtro por tipo de ejercicio">
+                    <button class="filter-btn active" data-filter="all" data-target="exercise" type="button">Todo</button>
+                    <button class="filter-btn" data-filter="fisico" data-target="exercise" type="button">Físico</button>
+                    <button class="filter-btn" data-filter="tecnico" data-target="exercise" type="button">Técnico</button>
+                    <button class="filter-btn" data-filter="tactico" data-target="exercise" type="button">Táctico</button>
+                    <button class="filter-btn" data-filter="recuperacion" data-target="exercise" type="button">Recuperación</button>
+                </div>
+            </div>
+
+            <div class="exercise-grid detailed mt-md">
+                <article class="exercise-card detailed-card" data-exercise-type="tecnico fisico">
+                    <img src="assets/img/exercises/conduccion-zigzag.svg" alt="Conducción en zigzag entre conos" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Conducción en zigzag</h3><span class="badge badge-green">Técnico</span></div>
+                        <p><strong>Objetivo:</strong> mejorar control de balón, cambios de dirección y coordinación pie-balón.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>8–12 min</dd></div><div><dt>Espacio</dt><dd>10×15 m</dd></div><div><dt>Jugadores</dt><dd>1–8</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Ubica 4–6 conos separados por 1,5–2 m.</li><li>Conduce con balón cerca del pie dominante.</li><li>Repite con pierna no dominante.</li><li>Aumenta velocidad solo cuando no pierdas control.</li></ol><p><strong>Variantes:</strong> ida con derecha, vuelta con izquierda; agregar pase final a objetivo.</p><p><strong>Errores comunes:</strong> mirar solo el balón, alejar demasiado el toque, girar con cuerpo rígido.</p><p><strong>Recomendación:</strong> que la técnica mande sobre la velocidad.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="tecnico">
+                    <img src="assets/img/exercises/pase-pared.svg" alt="Pase contra pared" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Pase contra pared</h3><span class="badge badge-green">Técnico</span></div>
+                        <p><strong>Objetivo:</strong> desarrollar pase rasante, primer control y orientación corporal.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>10–14 min</dd></div><div><dt>Espacio</dt><dd>3–6 m frente a pared</dd></div><div><dt>Jugadores</dt><dd>1–2</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Marca una zona objetivo en la pared.</li><li>Realiza 30 pases con derecha y 30 con izquierda.</li><li>Controla con interior y orienta el balón al siguiente pase.</li><li>Agrega un toque previo para simular recepción.</li></ol><p><strong>Variantes:</strong> un toque, dos toques, control orientado lateral.</p><p><strong>Errores comunes:</strong> golpear con tobillo blando, pase elevado, recibir de frente sin perfilarse.</p><p><strong>Recomendación:</strong> pie de apoyo apunta al objetivo.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="fisico">
+                    <img src="assets/img/exercises/agilidad-lateral.svg" alt="Desplazamientos laterales" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Desplazamiento lateral</h3><span class="badge badge-orange">Físico</span></div>
+                        <p><strong>Objetivo:</strong> mejorar coordinación lateral, frenada y respuesta en espacios cortos.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>8–10 min</dd></div><div><dt>Espacio</dt><dd>5×8 m</dd></div><div><dt>Jugadores</dt><dd>1–10</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Marca dos líneas separadas por 4–5 m.</li><li>Desplázate lateralmente sin cruzar pies.</li><li>Frena con rodillas semiflexionadas.</li><li>Descansa 30–45 s entre repeticiones.</li></ol><p><strong>Variantes:</strong> tocar cono, reaccionar a señal del entrenador, agregar balón al final.</p><p><strong>Errores comunes:</strong> cruzar piernas, caer con tronco hacia adelante, frenar con rodilla extendida.</p><p><strong>Recomendación:</strong> centro de gravedad bajo y pasos cortos.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="fisico recuperacion">
+                    <img src="assets/img/exercises/fuerza-core.svg" alt="Core estable" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Core estable</h3><span class="badge badge-blue">Prevención</span></div>
+                        <p><strong>Objetivo:</strong> fortalecer zona media para mejorar postura, equilibrio y prevención de molestias.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>8–12 min</dd></div><div><dt>Espacio</dt><dd>2×2 m</dd></div><div><dt>Jugadores</dt><dd>1–12</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Plancha frontal 25–40 s.</li><li>Plancha lateral 20–30 s por lado.</li><li>Dead bug 8 repeticiones por lado.</li><li>Repite 2–3 rondas.</li></ol><p><strong>Variantes:</strong> menos tiempo, apoyo de rodillas o dead bug con pausa.</p><p><strong>Errores comunes:</strong> hundir cadera, contener respiración, arquear espalda.</p><p><strong>Recomendación:</strong> abdomen activo y respiración continua.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="tecnico tactico">
+                    <img src="assets/img/exercises/remate.svg" alt="Remate técnico a portería" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Remate técnico</h3><span class="badge badge-red">Finalización</span></div>
+                        <p><strong>Objetivo:</strong> mejorar precisión de remate, postura corporal y elección de zona de definición.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>10–15 min</dd></div><div><dt>Espacio</dt><dd>Media cancha</dd></div><div><dt>Jugadores</dt><dd>1–8</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Inicia con balón quieto y objetivo visible.</li><li>Remata colocado a esquinas.</li><li>Agrega conducción corta antes del remate.</li><li>Alterna pierna dominante y no dominante.</li></ol><p><strong>Variantes:</strong> remate tras pase, remate con oposición pasiva, remate de primera.</p><p><strong>Errores comunes:</strong> buscar potencia antes de postura, mirar solo el balón, apoyar el pie muy lejos.</p><p><strong>Recomendación:</strong> precisión primero, potencia después.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="tactico mixto">
+                    <img src="assets/img/exercises/pichanga.svg" alt="Cancha de futbolito para juego reducido" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Juego reducido con consigna</h3><span class="badge badge-purple">Táctico</span></div>
+                        <p><strong>Objetivo:</strong> aplicar pase, apoyo, presión y finalización en contexto real de futbolito.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>12–24 min</dd></div><div><dt>Espacio</dt><dd>Cancha reducida</dd></div><div><dt>Jugadores</dt><dd>6–12</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Organiza equipos 3v3, 4v4 o 5v5.</li><li>Define consigna: máximo 3 toques, gol vale doble tras pared o todos deben tocarla.</li><li>Juega bloques de 4–8 min con pausas reales.</li><li>Corrige una idea por bloque, no diez a la vez.</li></ol><p><strong>Variantes:</strong> comodín ofensivo, zona de finalización, presión tras pérdida por 5 segundos.</p><p><strong>Errores comunes:</strong> correr detrás de todo, no dar línea de pase, rematar sin ventaja.</p><p><strong>Recomendación:</strong> pregunta “¿qué viste antes de recibir?” para formar toma de decisiones.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="recuperacion">
+                    <img src="assets/img/exercises/movilidad.svg" alt="Movilidad de cadera y espalda" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Movilidad de cadera</h3><span class="badge badge-blue">Recuperación</span></div>
+                        <p><strong>Objetivo:</strong> disminuir rigidez, mejorar rango de movimiento y preparar recuperación.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>6–10 min</dd></div><div><dt>Espacio</dt><dd>2×2 m</dd></div><div><dt>Jugadores</dt><dd>Individual</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Realiza 90/90 de cadera 45 s por lado.</li><li>Flexor de cadera 40 s por lado.</li><li>Piriforme/glúteo 40 s por lado.</li><li>Respira lento y evita rebotes.</li></ol><p><strong>Variantes:</strong> sentado, acostado o con apoyo de pared.</p><p><strong>Errores comunes:</strong> forzar dolor, hacer rebotes, tensar hombros.</p><p><strong>Recomendación:</strong> debe sentirse como alivio, no como competencia.</p></details>
+                    </div>
+                </article>
+
+                <article class="exercise-card detailed-card" data-exercise-type="recuperacion">
+                    <img src="assets/img/exercises/oficina.svg" alt="Micro pausas en día de oficina" loading="lazy">
+                    <div class="exercise-body">
+                        <div class="exercise-title-row"><h3>Micro-pausas de oficina</h3><span class="badge badge-blue">Recuperación</span></div>
+                        <p><strong>Objetivo:</strong> reducir rigidez por estar sentado sin convertir el día en entrenamiento.</p>
+                        <dl class="meta-list"><div><dt>Tiempo</dt><dd>2–3 min</dd></div><div><dt>Espacio</dt><dd>Oficina/casa</dd></div><div><dt>Jugadores</dt><dd>Individual</dd></div></dl>
+                        <details><summary>Instrucciones y correcciones</summary><ol><li>Levántate y camina 1 minuto.</li><li>Haz 10 rotaciones de cadera.</li><li>Realiza 10 sentadillas suaves o 10 elevaciones de talón.</li><li>Vuelve al trabajo sin sensación de fatiga.</li></ol><p><strong>Variantes:</strong> movilidad de hombros, respiración o caminata breve.</p><p><strong>Errores comunes:</strong> hacerlo muy intenso, saltarse pausas por varias horas, no hidratarse.</p><p><strong>Recomendación:</strong> agenda recordatorios si el día es largo.</p></details>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="evaluacion" class="section-block">
+            <div class="section-title">
+                <div>
+                    <span class="section-kicker">Seguimiento</span>
+                    <h2>📊 Evaluación y control del progreso</h2>
+                    <p>El seguimiento permite ajustar la carga antes de que aparezca sobreentrenamiento o desmotivación. Se puede copiar a una planilla si se quiere llevar registro semanal.</p>
+                </div>
+            </div>
             <div class="layout-grid">
-                <div class="card">
-                    <h3>⚠️ Escala de dolor y decisiones</h3>
+                <article class="card">
+                    <h3>Registro semanal sugerido</h3>
                     <div class="table-wrap">
                         <table>
-                            <thead><tr><th>Dolor</th><th>Decisión</th></tr></thead>
+                            <thead><tr><th>Indicador</th><th>Cómo registrar</th><th>Meta</th><th>Alerta</th></tr></thead>
                             <tbody>
-                                <tr><td><span class="badge badge-green">0–3/10</span></td><td>Entrenar normal, cuidando técnica.</td></tr>
-                                <tr><td><span class="badge badge-orange">4–5/10</span></td><td>Bajar intensidad, eliminar sprints, saltos y remates fuertes.</td></tr>
-                                <tr><td><span class="badge badge-red">6/10 o más</span></td><td>Suspender sesión intensa y hacer solo movilidad suave.</td></tr>
-                                <tr><td>Dolor que baja por la pierna</td><td>Consultar con profesional.</td></tr>
-                                <tr><td>Hormigueo o debilidad</td><td>Consultar con profesional.</td></tr>
+                                <tr><td>Asistencia</td><td>Día completado / no completado</td><td>4–5 días útiles</td><td>Menos de 3 días por dos semanas</td></tr>
+                                <tr><td>Carga percibida</td><td>RPE 1–10 al finalizar</td><td>Promedio 5–7</td><td>8+ en varios días seguidos</td></tr>
+                                <tr><td>Dolor</td><td>Escala 0–10</td><td>0–3 tolerable</td><td>4+ sostenido o dolor irradiado</td></tr>
+                                <tr><td>Técnica</td><td>Pases acertados / intentos</td><td>70% o más</td><td>Menos de 50% sin mejora</td></tr>
+                                <tr><td>Confianza</td><td>Autoevaluación 1–5</td><td>Subir 1 punto en 8 semanas</td><td>Miedo a acelerar o rematar</td></tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div class="card">
-                    <h3>📊 Escala de esfuerzo</h3>
-                    <div class="scale-row">
-                        <span class="scale-item scale-low">1–2<br>Muy fácil</span>
-                        <span class="scale-item scale-low">3–4<br>Suave</span>
-                        <span class="scale-item scale-mid">5–6<br>Moderado</span>
-                        <span class="scale-item scale-mid">7<br>Exigente</span>
-                        <span class="scale-item scale-high">8<br>Duro</span>
-                        <span class="scale-item scale-high">9–10<br>Máximo</span>
+                </article>
+                <article class="card">
+                    <h3>Escala de dolor y decisión</h3>
+                    <div class="decision-list">
+                        <div class="decision-item safe"><strong>0–3/10</strong><span>Entrenar normal, cuidando técnica.</span></div>
+                        <div class="decision-item warning"><strong>4–5/10</strong><span>Bajar intensidad; eliminar sprints, saltos y remates fuertes.</span></div>
+                        <div class="decision-item danger"><strong>6/10 o más</strong><span>Suspender sesión intensa y hacer solo movilidad suave.</span></div>
+                        <div class="decision-item danger"><strong>Hormigueo, debilidad o dolor que baja por la pierna</strong><span>Consultar con profesional.</span></div>
                     </div>
-                    <div class="box box-warning"><strong>Regla central</strong>No conviertas lunes, jueves, viernes, sábado y domingo en cinco partidos. La cancha sirve para técnica, recuperación y juego, no solo intensidad.</div>
+                </article>
+            </div>
+
+            <div class="card mt-md">
+                <h3>Plantilla rápida de asistencia y carga</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Semana</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th><th>Dom</th><th>RPE promedio</th><th>Observación</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>✓</td><td>Rec.</td><td>Rec.</td><td>✓</td><td>Suave</td><td>✓</td><td>Desc.</td><td>5</td><td>Adaptación inicial.</td></tr>
+                            <tr><td>2</td><td>✓</td><td>Rec.</td><td>Rec.</td><td>✓</td><td>Suave</td><td>✓</td><td>✓</td><td>5–6</td><td>Mejorar continuidad.</td></tr>
+                            <tr><td>3–4</td><td colspan="7">Aumentar repeticiones técnicas y mantener pausas reales.</td><td>6–7</td><td>Controlar fatiga.</td></tr>
+                            <tr><td>5–6</td><td colspan="7">Agregar bloques exigentes puntuales; viernes sigue siendo descarga.</td><td>7</td><td>Evitar exceso.</td></tr>
+                            <tr><td>7–8</td><td colspan="7">Transferir a juego, decisiones y ritmo de partido controlado.</td><td>7–8</td><td>Preparar continuidad.</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
-        <section id="nutricion">
-            <div class="card">
-                <div class="section-title">
-                    <div>
-                        <h2>🥗 Nutrición e hidratación rápida</h2>
-                        <p>Para días de cancha, llegar con energía importa tanto como el entrenamiento.</p>
-                    </div>
+        <section id="recomendaciones" class="section-block">
+            <div class="section-title">
+                <div>
+                    <span class="section-kicker">Uso práctico</span>
+                    <h2>💬 Recomendaciones para jugadores</h2>
+                    <p>Consejos simples para que el plan sea sostenible y no dependa solo de motivación.</p>
                 </div>
-                <ul class="compact-list">
-                    <li><strong>2–3 h antes:</strong><br>comida liviana con carbohidrato: arroz, pasta ligera, pan con palta/huevo, avena o fruta.</li>
-                    <li><strong>30–45 min antes:</strong><br>si hay hambre, algo pequeño: medio plátano o galletas de arroz.</li>
-                    <li><strong>Durante cancha:</strong><br>llevar botella. No llegar deshidratado.</li>
-                    <li><strong>Después:</strong><br>proteína + carbohidrato: huevos con pan, pollo con arroz, atún con papas o yogur con cereal.</li>
-                </ul>
+            </div>
+            <div class="recommendation-grid">
+                <article class="recommendation-card"><span>🥤</span><h3>Hidratación</h3><p>Llegar con botella y beber antes de tener sed. En días de calor, agregar pausas más frecuentes.</p></article>
+                <article class="recommendation-card"><span>🍌</span><h3>Comida previa</h3><p>Comer algo liviano 2–3 horas antes. Evitar entrenar fuerte con el estómago pesado.</p></article>
+                <article class="recommendation-card"><span>👟</span><h3>Equipamiento</h3><p>Usar zapatillas apropiadas para superficie de futbolito y revisar cordones antes de iniciar.</p></article>
+                <article class="recommendation-card"><span>🧠</span><h3>Decisión antes que ansiedad</h3><p>No perseguir todas las pelotas. Elegir cuándo presionar, cuándo pasar y cuándo pausar.</p></article>
+                <article class="recommendation-card"><span>📓</span><h3>Registro breve</h3><p>Anotar después de cada sesión: minutos, fatiga, dolor y una mejora observada.</p></article>
+                <article class="recommendation-card"><span>🛌</span><h3>Descanso</h3><p>El progreso aparece cuando el cuerpo asimila la carga. Dormir y recuperar también forman parte del plan.</p></article>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>⚽ Plan de Entrenamiento para Futbolito / Futsal — versión optimizada para cancha y mejor experiencia usuario.</p>
-        <p class="footer-note">HTML + CSS + JS estáticos, listo para GitHub Pages.</p>
+        <p>⚽ Plan de Entrenamiento para Futbolito — HTML, CSS y JavaScript estáticos, listo para GitHub Pages.</p>
+        <p class="footer-note">Diseño responsive · filtros básicos · tarjetas desplegables · tablas legibles · PWA/offline básico.</p>
     </footer>
 
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>

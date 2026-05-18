@@ -1,26 +1,32 @@
-# Plan de Entrenamiento para Futbolito / Futsal
+# Plan de Entrenamiento de Futbolito
 
-Repositorio web estático para publicar en GitHub Pages un plan progresivo de entrenamiento de 8 semanas.
+Sitio web estático listo para publicar en **GitHub Pages**. Presenta una plataforma simple, visual y responsive para organizar un plan de entrenamiento de futbolito de 8 semanas.
 
-## Cambios aplicados en esta versión
+## Qué se mejoró
 
-1. **Nueva disponibilidad semanal**
-   - Cancha: lunes, jueves, viernes, sábado y domingo.
-   - Oficina/descanso: martes y miércoles.
-   - El plan se reorganizó en una semana real de lunes a domingo.
+- Diseño deportivo moderno con paleta verde cancha, blanco, gris oscuro y acentos de color.
+- Portada principal con objetivo, descripción y llamadas a la acción.
+- Secciones ordenadas: resumen, objetivos, calendario, sesiones, trabajo físico/técnico/táctico, ejercicios, evaluación y recomendaciones.
+- Sesiones de entrenamiento detalladas con:
+  - nombre de la sesión;
+  - objetivo principal;
+  - duración estimada;
+  - materiales;
+  - calentamiento;
+  - parte principal;
+  - ejercicios específicos;
+  - vuelta a la calma;
+  - indicadores de logro;
+  - observaciones del entrenador.
+- Biblioteca de ejercicios con tarjetas visuales y detalles desplegables.
+- Filtros por tipo de entrenamiento: físico, técnico, táctico, mixto y recuperación.
+- Tablas responsivas para calendario, seguimiento y carga semanal.
+- Menú sticky, botón volver arriba, selector de semana y detalles desplegables.
+- Código separado en HTML, CSS y JavaScript sin dependencias externas.
+- SVG locales para funcionar sin depender de imágenes externas.
+- `manifest.webmanifest` y `sw.js` para PWA/offline básico.
 
-2. **Mejora visual y de experiencia usuario**
-   - La página ya no muestra todo el contenido en una sola bajada larga.
-   - Se agregó un selector de día por pestañas.
-   - Se agregaron tarjetas de resumen, disponibilidad semanal y bloques desplegables por sesión.
-   - El usuario puede abrir el día que necesita sin recorrer toda la página.
-
-3. **Imágenes para ejercicios**
-   - Se agregaron SVG locales en `assets/img/exercises/`.
-   - No dependen de internet.
-   - Funcionan bien en GitHub Pages y en modo PWA/offline básico.
-
-## Estructura relevante
+## Estructura del proyecto
 
 ```text
 entrenamiento-main/
@@ -36,29 +42,39 @@ entrenamiento-main/
 │       ├── favicon.svg
 │       ├── og-cover.svg
 │       └── exercises/
+│           ├── agilidad-lateral.svg
 │           ├── calentamiento.svg
 │           ├── conduccion-zigzag.svg
-│           ├── pase-pared.svg
-│           ├── remate.svg
-│           ├── agilidad-lateral.svg
 │           ├── fuerza-core.svg
 │           ├── movilidad.svg
+│           ├── oficina.svg
+│           ├── pase-pared.svg
 │           ├── pichanga.svg
 │           ├── recuperacion.svg
-│           └── oficina.svg
+│           └── remate.svg
 ├── data/
 │   └── plan.json
+├── docs/
+│   └── plan_entrenamiento_futbolito.md
 ├── manifest.webmanifest
 └── sw.js
 ```
 
 ## Publicar en GitHub Pages
 
-1. Sube esta carpeta al repositorio.
-2. En GitHub, entra a **Settings → Pages**.
-3. En **Build and deployment**, selecciona la rama principal y la carpeta raíz.
-4. Guarda los cambios.
+1. Copia el contenido de esta carpeta dentro del repositorio.
+2. Haz commit y push:
 
-## Nota
+```bash
+git add .
+git commit -m "mejora visual y contenido del plan de futbolito"
+git push
+```
 
-Si ya tenías GitHub Pages activo, basta con reemplazar los archivos por esta versión y esperar a que GitHub actualice la publicación.
+3. En GitHub, entra a **Settings → Pages**.
+4. En **Build and deployment**, selecciona la rama principal y la carpeta raíz.
+5. Guarda los cambios.
+
+## Nota sobre caché
+
+El archivo `sw.js` usa caché local. Si actualizas el sitio y no ves cambios de inmediato, prueba abrirlo en ventana incógnita o borrar caché del navegador. En esta versión se actualizó `CACHE_NAME` para forzar la renovación de archivos.

@@ -1,101 +1,160 @@
 {
-  "titulo": "Plan de Entrenamiento para Futbolito / Futsal",
+  "titulo": "Plan de Entrenamiento de Futbolito",
+  "version": "3.0",
+  "descripcion": "Sitio estático para GitHub Pages con planificación semanal, sesiones detalladas, ejercicios, seguimiento y recomendaciones.",
   "duracion_semanas": 8,
+  "categoria": "Amateur / recreativo con enfoque progresivo",
+  "frecuencia": "5 días con opción de cancha + 2 días de recuperación/oficina",
+  "objetivo_general": "Mejorar condición física, técnica individual, toma de decisiones y prevención de molestias para jugar futbolito con mayor seguridad y continuidad.",
   "disponibilidad": {
-    "cancha": [
-      "Lunes",
-      "Jueves",
-      "Viernes",
-      "Sábado",
-      "Domingo"
-    ],
-    "oficina_descanso": [
-      "Martes",
-      "Miércoles"
-    ]
+    "cancha": ["Lunes", "Jueves", "Viernes", "Sábado", "Domingo"],
+    "oficina_descanso": ["Martes", "Miércoles"]
   },
-  "dias": [
-    {
-      "id": "lunes",
-      "nombre": "Lunes",
-      "sesion": "Cancha: base aeróbica + conducción + fuerza preventiva",
-      "lugar": "Cancha",
-      "duracion": "45–60 min",
-      "intensidad": "Media controlada"
-    },
-    {
-      "id": "martes",
-      "nombre": "Martes",
-      "sesion": "Oficina: descanso real + micro-pausas",
-      "lugar": "Oficina",
-      "duracion": "0–8 min",
-      "intensidad": "Muy baja"
-    },
-    {
-      "id": "miercoles",
-      "nombre": "Miércoles",
-      "sesion": "Oficina: descanso total o movilidad mínima",
-      "lugar": "Oficina",
-      "duracion": "0–8 min",
-      "intensidad": "Muy baja"
-    },
-    {
-      "id": "jueves",
-      "nombre": "Jueves",
-      "sesion": "Cancha: agilidad + pase + core estable",
-      "lugar": "Cancha",
-      "duracion": "45–60 min",
-      "intensidad": "Media"
-    },
-    {
-      "id": "viernes",
-      "nombre": "Viernes",
-      "sesion": "Cancha: técnica suave + recuperación activa",
-      "lugar": "Cancha",
-      "duracion": "30–45 min",
-      "intensidad": "Baja"
-    },
-    {
-      "id": "sabado",
-      "nombre": "Sábado",
-      "sesion": "Cancha: técnica + remate + pichanga controlada",
-      "lugar": "Cancha",
-      "duracion": "45–70 min",
-      "intensidad": "Media-alta progresiva"
-    },
-    {
-      "id": "domingo",
-      "nombre": "Domingo",
-      "sesion": "Cancha: simulación de partido o descarga con balón",
-      "lugar": "Cancha",
-      "duracion": "35–60 min",
-      "intensidad": "Variable según sábado"
-    }
-  ],
   "fases": [
     {
-      "semanas": "1–2",
-      "nombre": "Adaptación real",
-      "intensidad": "5–6/10",
-      "foco": "usar cancha sin sobrecargar"
+      "semanas": "1-2",
+      "nombre": "Adaptación inicial",
+      "intensidad": "5-6/10",
+      "foco": "Aprender estructura, cuidar técnica y registrar sensaciones."
     },
     {
-      "semanas": "3–4",
+      "semanas": "3-4",
       "nombre": "Construcción",
-      "intensidad": "6–7/10",
-      "foco": "aumentar volumen técnico"
+      "intensidad": "6-7/10",
+      "foco": "Aumentar volumen técnico y mejorar recuperación entre esfuerzos."
     },
     {
-      "semanas": "5–6",
+      "semanas": "5-6",
       "nombre": "Intensidad controlada",
-      "intensidad": "7–8/10",
-      "foco": "bloques similares a juego"
+      "intensidad": "7-8/10 en bloques puntuales",
+      "foco": "Acercar el entrenamiento al ritmo real sin sobrecargar días suaves."
     },
     {
-      "semanas": "7–8",
-      "nombre": "Transferencia",
-      "intensidad": "ritmo de partido controlado",
-      "foco": "pichanga con mejores decisiones"
+      "semanas": "7-8",
+      "nombre": "Transferencia al juego",
+      "intensidad": "Ritmo de partido controlado",
+      "foco": "Aplicar técnica, condición física y decisiones tácticas en juego reducido."
+    }
+  ],
+  "sesiones": [
+    {
+      "dia": "Lunes",
+      "tipo": ["mixto", "fisico", "tecnico"],
+      "nombre": "Base aeróbica + conducción + fuerza preventiva",
+      "objetivo": "Iniciar la semana con volumen controlado, mejorar control de balón y activar musculatura protectora.",
+      "duracion": "45-60 min",
+      "materiales": ["Balón", "Conos o botellas", "Agua"],
+      "indicadores": ["Balón cerca del pie", "Fatiga máxima 6/10", "Sin dolor lumbar en aumento"]
+    },
+    {
+      "dia": "Martes",
+      "tipo": ["recuperacion"],
+      "nombre": "Descanso real + micro-pausas",
+      "objetivo": "Permitir adaptación física y reducir rigidez por jornada de oficina.",
+      "duracion": "0-8 min",
+      "materiales": ["Ninguno"],
+      "indicadores": ["No aumenta fatiga", "Disminuye rigidez", "Se mantiene hidratación"]
+    },
+    {
+      "dia": "Miércoles",
+      "tipo": ["recuperacion"],
+      "nombre": "Descanso total o movilidad mínima",
+      "objetivo": "Llegar al jueves con piernas disponibles y menor carga acumulada.",
+      "duracion": "0-8 min",
+      "materiales": ["Mat opcional"],
+      "indicadores": ["Sensación corporal más suelta", "Sin cansancio extra", "Preparación para jueves"]
+    },
+    {
+      "dia": "Jueves",
+      "tipo": ["fisico", "tecnico"],
+      "nombre": "Agilidad + pase + core estable",
+      "objetivo": "Mejorar desplazamientos cortos, pase rasante y estabilidad corporal.",
+      "duracion": "45-60 min",
+      "materiales": ["Balón", "Conos", "Pared o arco"],
+      "indicadores": ["Frena sin perder equilibrio", "Pase rasante al objetivo", "Tronco estable"]
+    },
+    {
+      "dia": "Viernes",
+      "tipo": ["tecnico", "recuperacion"],
+      "nombre": "Técnica suave + recuperación activa",
+      "objetivo": "Tocar balón sin acumular fatiga antes del fin de semana.",
+      "duracion": "30-45 min",
+      "materiales": ["Balón", "Conos opcionales"],
+      "indicadores": ["Termina más suelto", "Sin sprints", "Técnica controlada"]
+    },
+    {
+      "dia": "Sábado",
+      "tipo": ["mixto", "fisico", "tecnico", "tactico"],
+      "nombre": "Técnica + remate + pichanga controlada",
+      "objetivo": "Transferir técnica y condición física a situaciones reales de juego.",
+      "duracion": "45-70 min",
+      "materiales": ["Balón", "Arco", "Petos", "Conos"],
+      "indicadores": ["Decide antes de recibir", "Remate con postura estable", "Respeta pausas"]
+    },
+    {
+      "dia": "Domingo",
+      "tipo": ["tactico", "tecnico", "recuperacion"],
+      "nombre": "Simulación de partido o descarga con balón",
+      "objetivo": "Decidir carga según fatiga del sábado: transferencia si hay energía, descarga si hay fatiga.",
+      "duracion": "35-60 min",
+      "materiales": ["Balón", "Conos", "Arco opcional"],
+      "indicadores": ["Carga elegida según fatiga", "Registro semanal", "Sin sobrecarga para lunes"]
+    }
+  ],
+  "ejercicios": [
+    {
+      "nombre": "Conducción en zigzag",
+      "tipo": ["tecnico", "fisico"],
+      "tiempo": "8-12 min",
+      "espacio": "10x15 m",
+      "jugadores": "1-8",
+      "objetivo": "Mejorar control de balón y cambios de dirección.",
+      "imagen": "assets/img/exercises/conduccion-zigzag.svg"
+    },
+    {
+      "nombre": "Pase contra pared",
+      "tipo": ["tecnico"],
+      "tiempo": "10-14 min",
+      "espacio": "3-6 m frente a pared",
+      "jugadores": "1-2",
+      "objetivo": "Desarrollar pase rasante, primer control y orientación corporal.",
+      "imagen": "assets/img/exercises/pase-pared.svg"
+    },
+    {
+      "nombre": "Desplazamiento lateral",
+      "tipo": ["fisico"],
+      "tiempo": "8-10 min",
+      "espacio": "5x8 m",
+      "jugadores": "1-10",
+      "objetivo": "Mejorar coordinación lateral, frenada y respuesta corta.",
+      "imagen": "assets/img/exercises/agilidad-lateral.svg"
+    },
+    {
+      "nombre": "Core estable",
+      "tipo": ["fisico", "recuperacion"],
+      "tiempo": "8-12 min",
+      "espacio": "2x2 m",
+      "jugadores": "1-12",
+      "objetivo": "Fortalecer zona media y prevenir molestias.",
+      "imagen": "assets/img/exercises/fuerza-core.svg"
+    },
+    {
+      "nombre": "Remate técnico",
+      "tipo": ["tecnico", "tactico"],
+      "tiempo": "10-15 min",
+      "espacio": "Media cancha",
+      "jugadores": "1-8",
+      "objetivo": "Mejorar precisión, postura y elección de zona de remate.",
+      "imagen": "assets/img/exercises/remate.svg"
+    },
+    {
+      "nombre": "Juego reducido con consigna",
+      "tipo": ["tactico", "mixto"],
+      "tiempo": "12-24 min",
+      "espacio": "Cancha reducida",
+      "jugadores": "6-12",
+      "objetivo": "Aplicar pase, apoyo, presión y finalización en contexto real.",
+      "imagen": "assets/img/exercises/pichanga.svg"
     }
   ]
 }
