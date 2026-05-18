@@ -1,7 +1,7 @@
 {
   "name": "Plan de Entrenamiento Futbolito / Futsal",
   "short_name": "Entrenamiento",
-  "description": "Plan progresivo de 8 semanas para volver a jugar futbolito/futsal.",
+  "description": "Plan progresivo de 8 semanas para volver a jugar futbolito/futsal con cancha disponible lunes, jueves, viernes, sábado y domingo.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f0f4f1",

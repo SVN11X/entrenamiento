@@ -1,77 +1,101 @@
 {
   "titulo": "Plan de Entrenamiento para Futbolito / Futsal",
   "duracion_semanas": 8,
+  "disponibilidad": {
+    "cancha": [
+      "Lunes",
+      "Jueves",
+      "Viernes",
+      "Sábado",
+      "Domingo"
+    ],
+    "oficina_descanso": [
+      "Martes",
+      "Miércoles"
+    ]
+  },
   "dias": [
     {
-      "id": "dia1",
+      "id": "lunes",
       "nombre": "Lunes",
-      "sesion": "Resistencia + fuerza piernas + tren superior + core",
-      "lugar": "Casa",
-      "duracion": "45–55 min"
+      "sesion": "Cancha: base aeróbica + conducción + fuerza preventiva",
+      "lugar": "Cancha",
+      "duracion": "45–60 min",
+      "intensidad": "Media controlada"
     },
     {
-      "id": "dia2",
+      "id": "martes",
       "nombre": "Martes",
-      "sesion": "Descanso o movilidad breve",
-      "lugar": "Casa",
-      "duracion": "0–10 min"
+      "sesion": "Oficina: descanso real + micro-pausas",
+      "lugar": "Oficina",
+      "duracion": "0–8 min",
+      "intensidad": "Muy baja"
     },
     {
-      "id": "dia3",
-      "nombre": "Sábado",
-      "sesion": "Técnica con balón + pase + remate controlado",
-      "lugar": "Cancha",
-      "duracion": "45–60 min"
-    },
-    {
-      "id": "dia4",
-      "nombre": "Jueves",
-      "sesion": "Agilidad controlada + fuerza unilateral + core",
-      "lugar": "Casa",
-      "duracion": "45–55 min"
-    },
-    {
-      "id": "dia5",
+      "id": "miercoles",
       "nombre": "Miércoles",
-      "sesion": "Descanso total",
-      "lugar": "—",
-      "duracion": "Opcional"
+      "sesion": "Oficina: descanso total o movilidad mínima",
+      "lugar": "Oficina",
+      "duracion": "0–8 min",
+      "intensidad": "Muy baja"
     },
     {
-      "id": "dia6",
-      "nombre": "Domingo",
-      "sesion": "Balón + simulación de partido / pichanga",
+      "id": "jueves",
+      "nombre": "Jueves",
+      "sesion": "Cancha: agilidad + pase + core estable",
       "lugar": "Cancha",
-      "duracion": "45–60 min"
+      "duracion": "45–60 min",
+      "intensidad": "Media"
     },
     {
-      "id": "dia7",
+      "id": "viernes",
       "nombre": "Viernes",
-      "sesion": "Recuperación activa opcional + movilidad",
-      "lugar": "Casa",
-      "duracion": "20–45 min"
+      "sesion": "Cancha: técnica suave + recuperación activa",
+      "lugar": "Cancha",
+      "duracion": "30–45 min",
+      "intensidad": "Baja"
+    },
+    {
+      "id": "sabado",
+      "nombre": "Sábado",
+      "sesion": "Cancha: técnica + remate + pichanga controlada",
+      "lugar": "Cancha",
+      "duracion": "45–70 min",
+      "intensidad": "Media-alta progresiva"
+    },
+    {
+      "id": "domingo",
+      "nombre": "Domingo",
+      "sesion": "Cancha: simulación de partido o descarga con balón",
+      "lugar": "Cancha",
+      "duracion": "35–60 min",
+      "intensidad": "Variable según sábado"
     }
   ],
   "fases": [
     {
       "semanas": "1–2",
       "nombre": "Adaptación real",
-      "intensidad": "5–6/10"
+      "intensidad": "5–6/10",
+      "foco": "usar cancha sin sobrecargar"
     },
     {
       "semanas": "3–4",
       "nombre": "Construcción",
-      "intensidad": "6–7/10"
+      "intensidad": "6–7/10",
+      "foco": "aumentar volumen técnico"
     },
     {
       "semanas": "5–6",
       "nombre": "Intensidad controlada",
-      "intensidad": "7–8/10"
+      "intensidad": "7–8/10",
+      "foco": "bloques similares a juego"
     },
     {
       "semanas": "7–8",
       "nombre": "Transferencia",
-      "intensidad": "ritmo de partido controlado"
+      "intensidad": "ritmo de partido controlado",
+      "foco": "pichanga con mejores decisiones"
     }
   ]
 }
