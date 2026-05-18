@@ -324,3 +324,92 @@ tbody tr:hover td { background: rgba(232, 245, 233, .35); }
     .filter-btn { flex-shrink: 0; }
     table { min-width: 680px; font-size: .8rem; }
 }
+
+
+/* Versión de máximo detalle para sesiones y ejercicios */
+.ultra-session { grid-column: span 2; }
+.session-plan-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
+    gap: .85rem;
+    margin-top: .85rem;
+}
+.session-plan-grid > div {
+    padding: .85rem;
+    border-radius: var(--radius);
+    background: var(--slate-50);
+    border: 1px solid var(--slate-200);
+}
+.session-plan-grid h4 { color: var(--green-800); margin-bottom: .5rem; }
+.timeline-list { display: grid; gap: .45rem; }
+.timeline-item {
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: .65rem;
+    align-items: start;
+    padding: .55rem;
+    border-radius: 13px;
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+}
+.timeline-item strong { color: var(--green-800); font-size: .82rem; }
+.timeline-item span { color: var(--slate-600); font-size: .9rem; }
+.drill-grid { display: grid; gap: .85rem; margin-top: .9rem; }
+.drill-card {
+    border: 1px solid var(--slate-200);
+    border-radius: var(--radius-lg);
+    background: var(--white);
+    padding: .95rem;
+    box-shadow: var(--shadow-xs);
+}
+.drill-head { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: .75rem; align-items: start; }
+.drill-number {
+    display: inline-grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 14px;
+    background: var(--green-800);
+    color: var(--white);
+    font-weight: 950;
+}
+.drill-head h4 { color: var(--slate-900); font-size: 1.05rem; margin-bottom: .18rem; }
+.drill-head p { color: var(--slate-600); font-size: .92rem; }
+.compact-meta { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.drill-content { display: grid; gap: .8rem; margin-top: .75rem; }
+.instruction-box,
+.correction-grid > div,
+.exercise-detail-block {
+    padding: .78rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--slate-200);
+    background: var(--slate-50);
+}
+.instruction-box h5,
+.correction-grid h5,
+.exercise-detail-block h4 {
+    margin-bottom: .4rem;
+    color: var(--green-800);
+    font-size: .92rem;
+}
+.correction-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.coach-cue {
+    margin-top: .1rem;
+    padding: .78rem;
+    border-radius: var(--radius);
+    background: var(--green-100);
+    color: var(--green-900);
+    border: 1px solid rgba(76,175,80,.25);
+}
+.max-detail-card details[open] { display: grid; gap: .65rem; }
+.max-detail-card .exercise-detail-block p { margin: 0; }
+@media (max-width: 1050px) {
+    .ultra-session { grid-column: span 1; }
+}
+@media (max-width: 760px) {
+    .session-plan-grid,
+    .correction-grid,
+    .compact-meta { grid-template-columns: 1fr; }
+    .timeline-item { grid-template-columns: 1fr; }
+    .drill-head { grid-template-columns: 1fr; }
+}

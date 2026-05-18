@@ -60,6 +60,21 @@ entrenamiento-main/
 └── sw.js
 ```
 
+
+## Corrección aplicada: detalle máximo de ejercicios
+
+Esta versión agrega fichas completas para cada sesión y ejercicio:
+
+- Tiempo exacto por bloque.
+- Series, repeticiones, pausas y progresiones por semana.
+- Organización del espacio y cantidad de jugadores.
+- Instrucciones paso a paso.
+- Variantes según nivel, dolor, espacio y cantidad de jugadores.
+- Errores comunes observables.
+- Recomendaciones específicas del entrenador.
+- `data/plan.json` actualizado con el detalle estructurado.
+- `sw.js` actualizado para forzar nueva caché en GitHub Pages.
+
 ## Publicar en GitHub Pages
 
 1. Copia el contenido de esta carpeta dentro del repositorio.

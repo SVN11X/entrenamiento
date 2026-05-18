@@ -1,14 +1,23 @@
 {
   "titulo": "Plan de Entrenamiento de Futbolito",
-  "version": "3.0",
+  "version": "v3-detalle-maximo",
   "descripcion": "Sitio estático para GitHub Pages con planificación semanal, sesiones detalladas, ejercicios, seguimiento y recomendaciones.",
   "duracion_semanas": 8,
   "categoria": "Amateur / recreativo con enfoque progresivo",
   "frecuencia": "5 días con opción de cancha + 2 días de recuperación/oficina",
   "objetivo_general": "Mejorar condición física, técnica individual, toma de decisiones y prevención de molestias para jugar futbolito con mayor seguridad y continuidad.",
   "disponibilidad": {
-    "cancha": ["Lunes", "Jueves", "Viernes", "Sábado", "Domingo"],
-    "oficina_descanso": ["Martes", "Miércoles"]
+    "cancha": [
+      "Lunes",
+      "Jueves",
+      "Viernes",
+      "Sábado",
+      "Domingo"
+    ],
+    "oficina_descanso": [
+      "Martes",
+      "Miércoles"
+    ]
   },
   "fases": [
     {
@@ -39,72 +48,150 @@
   "sesiones": [
     {
       "dia": "Lunes",
-      "tipo": ["mixto", "fisico", "tecnico"],
+      "tipo": [
+        "mixto",
+        "fisico",
+        "tecnico"
+      ],
       "nombre": "Base aeróbica + conducción + fuerza preventiva",
       "objetivo": "Iniciar la semana con volumen controlado, mejorar control de balón y activar musculatura protectora.",
       "duracion": "45-60 min",
-      "materiales": ["Balón", "Conos o botellas", "Agua"],
-      "indicadores": ["Balón cerca del pie", "Fatiga máxima 6/10", "Sin dolor lumbar en aumento"]
+      "materiales": [
+        "Balón",
+        "Conos o botellas",
+        "Agua"
+      ],
+      "indicadores": [
+        "Balón cerca del pie",
+        "Fatiga máxima 6/10",
+        "Sin dolor lumbar en aumento"
+      ]
     },
     {
       "dia": "Martes",
-      "tipo": ["recuperacion"],
+      "tipo": [
+        "recuperacion"
+      ],
       "nombre": "Descanso real + micro-pausas",
       "objetivo": "Permitir adaptación física y reducir rigidez por jornada de oficina.",
       "duracion": "0-8 min",
-      "materiales": ["Ninguno"],
-      "indicadores": ["No aumenta fatiga", "Disminuye rigidez", "Se mantiene hidratación"]
+      "materiales": [
+        "Ninguno"
+      ],
+      "indicadores": [
+        "No aumenta fatiga",
+        "Disminuye rigidez",
+        "Se mantiene hidratación"
+      ]
     },
     {
       "dia": "Miércoles",
-      "tipo": ["recuperacion"],
+      "tipo": [
+        "recuperacion"
+      ],
       "nombre": "Descanso total o movilidad mínima",
       "objetivo": "Llegar al jueves con piernas disponibles y menor carga acumulada.",
       "duracion": "0-8 min",
-      "materiales": ["Mat opcional"],
-      "indicadores": ["Sensación corporal más suelta", "Sin cansancio extra", "Preparación para jueves"]
+      "materiales": [
+        "Mat opcional"
+      ],
+      "indicadores": [
+        "Sensación corporal más suelta",
+        "Sin cansancio extra",
+        "Preparación para jueves"
+      ]
     },
     {
       "dia": "Jueves",
-      "tipo": ["fisico", "tecnico"],
+      "tipo": [
+        "fisico",
+        "tecnico"
+      ],
       "nombre": "Agilidad + pase + core estable",
       "objetivo": "Mejorar desplazamientos cortos, pase rasante y estabilidad corporal.",
       "duracion": "45-60 min",
-      "materiales": ["Balón", "Conos", "Pared o arco"],
-      "indicadores": ["Frena sin perder equilibrio", "Pase rasante al objetivo", "Tronco estable"]
+      "materiales": [
+        "Balón",
+        "Conos",
+        "Pared o arco"
+      ],
+      "indicadores": [
+        "Frena sin perder equilibrio",
+        "Pase rasante al objetivo",
+        "Tronco estable"
+      ]
     },
     {
       "dia": "Viernes",
-      "tipo": ["tecnico", "recuperacion"],
+      "tipo": [
+        "tecnico",
+        "recuperacion"
+      ],
       "nombre": "Técnica suave + recuperación activa",
       "objetivo": "Tocar balón sin acumular fatiga antes del fin de semana.",
       "duracion": "30-45 min",
-      "materiales": ["Balón", "Conos opcionales"],
-      "indicadores": ["Termina más suelto", "Sin sprints", "Técnica controlada"]
+      "materiales": [
+        "Balón",
+        "Conos opcionales"
+      ],
+      "indicadores": [
+        "Termina más suelto",
+        "Sin sprints",
+        "Técnica controlada"
+      ]
     },
     {
       "dia": "Sábado",
-      "tipo": ["mixto", "fisico", "tecnico", "tactico"],
+      "tipo": [
+        "mixto",
+        "fisico",
+        "tecnico",
+        "tactico"
+      ],
       "nombre": "Técnica + remate + pichanga controlada",
       "objetivo": "Transferir técnica y condición física a situaciones reales de juego.",
       "duracion": "45-70 min",
-      "materiales": ["Balón", "Arco", "Petos", "Conos"],
-      "indicadores": ["Decide antes de recibir", "Remate con postura estable", "Respeta pausas"]
+      "materiales": [
+        "Balón",
+        "Arco",
+        "Petos",
+        "Conos"
+      ],
+      "indicadores": [
+        "Decide antes de recibir",
+        "Remate con postura estable",
+        "Respeta pausas"
+      ]
     },
     {
       "dia": "Domingo",
-      "tipo": ["tactico", "tecnico", "recuperacion"],
+      "tipo": [
+        "tactico",
+        "tecnico",
+        "recuperacion"
+      ],
       "nombre": "Simulación de partido o descarga con balón",
       "objetivo": "Decidir carga según fatiga del sábado: transferencia si hay energía, descarga si hay fatiga.",
       "duracion": "35-60 min",
-      "materiales": ["Balón", "Conos", "Arco opcional"],
-      "indicadores": ["Carga elegida según fatiga", "Registro semanal", "Sin sobrecarga para lunes"]
+      "materiales": [
+        "Balón",
+        "Conos",
+        "Arco opcional"
+      ],
+      "indicadores": [
+        "Carga elegida según fatiga",
+        "Registro semanal",
+        "Sin sobrecarga para lunes"
+      ]
     }
   ],
   "ejercicios": [
     {
       "nombre": "Conducción en zigzag",
-      "tipo": ["tecnico", "fisico"],
+      "tipo": [
+        "tecnico",
+        "fisico"
+      ],
       "tiempo": "8-12 min",
       "espacio": "10x15 m",
       "jugadores": "1-8",
@@ -113,7 +200,9 @@
     },
     {
       "nombre": "Pase contra pared",
-      "tipo": ["tecnico"],
+      "tipo": [
+        "tecnico"
+      ],
       "tiempo": "10-14 min",
       "espacio": "3-6 m frente a pared",
       "jugadores": "1-2",
@@ -122,7 +211,9 @@
     },
     {
       "nombre": "Desplazamiento lateral",
-      "tipo": ["fisico"],
+      "tipo": [
+        "fisico"
+      ],
       "tiempo": "8-10 min",
       "espacio": "5x8 m",
       "jugadores": "1-10",
@@ -131,7 +222,10 @@
     },
     {
       "nombre": "Core estable",
-      "tipo": ["fisico", "recuperacion"],
+      "tipo": [
+        "fisico",
+        "recuperacion"
+      ],
       "tiempo": "8-12 min",
       "espacio": "2x2 m",
       "jugadores": "1-12",
@@ -140,7 +234,10 @@
     },
     {
       "nombre": "Remate técnico",
-      "tipo": ["tecnico", "tactico"],
+      "tipo": [
+        "tecnico",
+        "tactico"
+      ],
       "tiempo": "10-15 min",
       "espacio": "Media cancha",
       "jugadores": "1-8",
@@ -149,12 +246,809 @@
     },
     {
       "nombre": "Juego reducido con consigna",
-      "tipo": ["tactico", "mixto"],
+      "tipo": [
+        "tactico",
+        "mixto"
+      ],
       "tiempo": "12-24 min",
       "espacio": "Cancha reducida",
       "jugadores": "6-12",
       "objetivo": "Aplicar pase, apoyo, presión y finalización en contexto real.",
       "imagen": "assets/img/exercises/pichanga.svg"
+    }
+  ],
+  "detalle_sesiones": [
+    {
+      "dia": "Lunes",
+      "titulo": "Base aeróbica + conducción + fuerza preventiva",
+      "objetivo": "Iniciar la semana con volumen controlado, mejorar la relación pie-balón y activar la musculatura protectora de cadera, core y piernas sin llegar a fatiga alta.",
+      "materiales": "Balón, 6 conos o botellas, cronómetro, agua, mat opcional",
+      "jugadores": "1–6",
+      "intensidad": "Media controlada",
+      "timeline": [
+        {
+          "tiempo": "0–4 min",
+          "actividad": "Movilidad articular: tobillos, rodillas, cadera, columna torácica y hombros."
+        },
+        {
+          "tiempo": "4–8 min",
+          "actividad": "Activación: puente de glúteos, bird-dog y skipping suave."
+        },
+        {
+          "tiempo": "8–12 min",
+          "actividad": "Conducción libre progresiva con balón cerca del pie."
+        },
+        {
+          "tiempo": "12–24 min",
+          "actividad": "Resistencia con balón por ciclos de trabajo/pausa."
+        },
+        {
+          "tiempo": "24–36 min",
+          "actividad": "Zigzag técnico con conos, control de mirada y cambio de dirección."
+        },
+        {
+          "tiempo": "36–50 min",
+          "actividad": "Circuito de fuerza preventiva: sentadilla, zancada atrás y plancha."
+        },
+        {
+          "tiempo": "50–60 min",
+          "actividad": "Vuelta a la calma, respiración y registro rápido."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Calentamiento con movilidad + activación",
+          "objetivo": "Elevar temperatura corporal, preparar articulaciones y activar glúteos/core antes de conducir o cambiar de dirección.",
+          "tiempo": "12 min exactos",
+          "espacio": "Zona libre 8×8 m",
+          "jugadores": "1–6",
+          "carga": "RPE 2–3/10",
+          "instrucciones": [
+            "0:00–1:00 caminata rápida o trote suave alrededor de la cancha.",
+            "1:00–2:00 círculos de tobillo: 10 por lado; luego apoyo punta-talón 10 repeticiones.",
+            "2:00–3:00 movilidad de rodillas y cadera: 10 flexiones suaves + 10 círculos de cadera por sentido.",
+            "3:00–4:00 movilidad de columna: gato-vaca 8 repeticiones o rotaciones torácicas 6 por lado.",
+            "4:00–5:30 puente de glúteos: 2×10 repeticiones, pausa de 2 segundos arriba.",
+            "5:30–7:00 bird-dog: 2×6 por lado, mantener abdomen firme y espalda neutra.",
+            "7:00–8:00 skipping suave en el lugar: 3 bloques de 15 s con 5 s de pausa.",
+            "8:00–12:00 conducción libre: 4 bloques de 45 s con 15 s de pausa; cada bloque cambia superficie de contacto: interior, exterior, planta e interior-exterior."
+          ],
+          "variantes": [
+            "Si hay poco espacio: conducción en cuadrado de 4×4 m.",
+            "Si hay dolor o rigidez: eliminar skipping y dejar solo caminata + movilidad."
+          ],
+          "errores_comunes": [
+            "Empezar corriendo fuerte antes de activar.",
+            "Hacer movilidad con rebotes bruscos.",
+            "Conducir con toques largos desde el calentamiento."
+          ],
+          "recomendacion_entrenador": "El calentamiento termina cuando el jugador respira más rápido, pero todavía puede hablar sin dificultad."
+        },
+        {
+          "nombre": "Resistencia específica con balón",
+          "objetivo": "Mejorar tolerancia al esfuerzo intermitente del futbolito sin transformar el lunes en partido.",
+          "tiempo": "12 min",
+          "espacio": "Carril de 15–20 m o media cancha",
+          "jugadores": "1–6",
+          "carga": "RPE 5–6/10",
+          "instrucciones": [
+            "Preparar un recorrido de ida y vuelta de 15–20 m con un cono de inicio y uno de retorno.",
+            "Semanas 1–2: 6 ciclos de 45 s conduciendo + 60 s caminando; total 10 min 30 s. Usar los 90 s restantes para hidratar y ajustar técnica.",
+            "Semanas 3–4: 7 ciclos de 50 s conduciendo + 55 s caminando.",
+            "Semanas 5–6: 8 ciclos de 55 s conduciendo + 45 s caminando.",
+            "Semanas 7–8: 8 ciclos de 60 s conduciendo + 45 s caminando, agregando un cambio de dirección cada 10 m.",
+            "Durante cada ciclo: balón a menos de un metro del pie, mirada arriba cada 3–4 toques y giro amplio al llegar al cono."
+          ],
+          "variantes": [
+            "Con compañero: uno conduce y otro acompaña sin quitar balón.",
+            "Con finalización: cada dos ciclos terminar con pase a objetivo."
+          ],
+          "errores_comunes": [
+            "Conducir demasiado rápido y perder el balón.",
+            "No respetar pausas.",
+            "Girar siempre para el mismo lado."
+          ],
+          "recomendacion_entrenador": "Si al terminar el ciclo 3 la técnica ya se desordena, reducir distancia o volver a 45 s de trabajo."
+        },
+        {
+          "nombre": "Zigzag con balón entre conos",
+          "objetivo": "Desarrollar control, orientación corporal y cambios de dirección en espacio reducido.",
+          "tiempo": "12 min",
+          "espacio": "4–6 conos separados por 1,5–2 m; carril de 10–14 m",
+          "jugadores": "1–8",
+          "carga": "RPE 5/10",
+          "instrucciones": [
+            "Armar una línea de 5 conos. Distancia inicial: 2 m entre conos; si domina el ejercicio, bajar a 1,5 m.",
+            "Bloque 1: 4 pasadas caminando rápido, ida con pie derecho y vuelta con pie izquierdo. Descansar 20 s entre pasadas.",
+            "Bloque 2: 4 pasadas a velocidad media, usando interior-exterior del pie. Descansar 30 s entre pasadas.",
+            "Bloque 3: 4 pasadas con mirada arriba obligatoria: levantar la vista al salir del segundo y cuarto cono. Descansar 30–40 s.",
+            "Bloque 4: 2 pasadas finales con pase a objetivo al terminar el último cono.",
+            "Criterio de calidad: si toca un cono o pierde el balón más de dos veces seguidas, bajar velocidad y repetir la pasada."
+          ],
+          "variantes": [
+            "Más fácil: 4 conos separados por 2,5 m.",
+            "Más difícil: usar solo pierna no dominante en la vuelta.",
+            "Con grupo: salida cada 10–12 s para evitar choques."
+          ],
+          "errores_comunes": [
+            "Mirar solo el balón.",
+            "Tocar el balón muy lejos del cuerpo.",
+            "Frenar con rodillas rígidas.",
+            "Girar de tronco sin acompañar con cadera."
+          ],
+          "recomendacion_entrenador": "El objetivo no es correr entre conos; es salir de cada cono con el balón controlado y el cuerpo preparado para el siguiente toque."
+        },
+        {
+          "nombre": "Circuito de fuerza preventiva",
+          "objetivo": "Fortalecer piernas, glúteos y core para tolerar frenadas, giros y cambios de ritmo.",
+          "tiempo": "14 min",
+          "espacio": "Zona plana 5×5 m",
+          "jugadores": "1–10",
+          "carga": "RPE 5–6/10",
+          "instrucciones": [
+            "Realizar 3 rondas. Descansar 45–60 s entre rondas.",
+            "Ejercicio 1: sentadilla controlada 12 repeticiones, tempo 3 segundos bajada + 1 segundo pausa + subir firme.",
+            "Ejercicio 2: zancada hacia atrás 8 repeticiones por pierna; rodilla delantera alineada con punta del pie.",
+            "Ejercicio 3: plancha frontal 30–40 s; abdomen firme, glúteos activos, cuello neutro.",
+            "Ejercicio 4 opcional semanas 5–8: puente de glúteos a una pierna 8 por lado.",
+            "Cierre: 30 s de respiración nasal antes de pasar a la vuelta a la calma."
+          ],
+          "variantes": [
+            "Si molesta rodilla: cambiar zancada por puente de glúteos bilateral 15 repeticiones.",
+            "Si la plancha colapsa: hacerla con rodillas apoyadas."
+          ],
+          "errores_comunes": [
+            "Sentadilla con talones levantados.",
+            "Zancada muy larga que carga la zona lumbar.",
+            "Plancha con cadera caída.",
+            "No descansar y perder postura."
+          ],
+          "recomendacion_entrenador": "No se busca quedar agotado; se busca terminar con sensación de estabilidad y piernas activas."
+        },
+        {
+          "nombre": "Vuelta a la calma + registro",
+          "objetivo": "Bajar pulsaciones, soltar musculatura y dejar evidencia para ajustar la siguiente sesión.",
+          "tiempo": "10 min",
+          "espacio": "Borde de cancha o zona tranquila",
+          "jugadores": "1–6",
+          "carga": "RPE 1–2/10",
+          "instrucciones": [
+            "3 min caminata lenta con respiración nasal.",
+            "Flexor de cadera: 40 s por lado, pelvis neutra.",
+            "Piriforme/glúteo: 40 s por lado.",
+            "Gemelos: 30 s por lado contra pared o apoyado en un escalón.",
+            "Registro: anotar fatiga final 0–10, dolor lumbar/glúteo 0–10, ejercicio más logrado y ejercicio a corregir."
+          ],
+          "variantes": [
+            "Si no hay tiempo: hacer solo caminata + registro.",
+            "Si hubo mucha carga: agregar 2 min de respiración acostado."
+          ],
+          "errores_comunes": [
+            "Irse sin bajar pulsaciones.",
+            "Estirar con dolor punzante.",
+            "No registrar molestias."
+          ],
+          "recomendacion_entrenador": "El registro del lunes define si el jueves se sube, mantiene o baja la carga."
+        }
+      ],
+      "indicadores": [
+        "Completa al menos 6 ciclos de conducción respetando pausas.",
+        "En zigzag pierde el balón máximo 2 veces por bloque.",
+        "Mantiene técnica de sentadilla/zancada sin dolor.",
+        "Termina con fatiga máxima 6/10 y sin dolor que aumente."
+      ],
+      "observacion": "Si el jugador llega con poca energía, eliminar un bloque de resistencia y mantener zigzag + fuerza preventiva. El lunes debe construir, no destruir."
+    },
+    {
+      "dia": "Martes",
+      "titulo": "Descanso real + micro-pausas de oficina",
+      "objetivo": "Permitir adaptación física y reducir rigidez de cadera/espalda por estar sentado, sin agregar una sesión de entrenamiento formal.",
+      "materiales": "Silla, pared opcional, cronómetro del celular",
+      "jugadores": "Individual",
+      "intensidad": "Muy baja",
+      "timeline": [
+        {
+          "tiempo": "Durante el día",
+          "actividad": "No entrenar fuerte ni compensar la falta de cancha."
+        },
+        {
+          "tiempo": "Cada 60–90 min",
+          "actividad": "Micro-pausa de 2–3 minutos si estuvo sentado."
+        },
+        {
+          "tiempo": "Fin del día",
+          "actividad": "Movilidad opcional de 5 minutos solo si hay rigidez."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Micro-pausa 1: levantar y resetear postura",
+          "objetivo": "Cortar periodos largos sentado para disminuir rigidez lumbar y de cadera.",
+          "tiempo": "2–3 min cada 60–90 min",
+          "espacio": "Oficina o pasillo",
+          "jugadores": "Individual",
+          "carga": "RPE 1/10",
+          "instrucciones": [
+            "Pon alarma cada 60–90 minutos si estarás sentado.",
+            "Camina 60 s sin mirar el celular.",
+            "Haz 10 círculos de hombros hacia atrás.",
+            "Haz 10 bisagras de cadera suaves con manos en cintura.",
+            "Respira profundo 3 veces antes de volver al puesto."
+          ],
+          "variantes": [
+            "Si no puedes levantarte: extensión de rodilla sentado 10 por pierna + movilidad de tobillo."
+          ],
+          "errores_comunes": [
+            "Convertir la pausa en ejercicio intenso.",
+            "Hacer movimientos rápidos en frío.",
+            "Saltarse hidratación."
+          ],
+          "recomendacion_entrenador": "La micro-pausa debe dejarte más suelto, no sudado."
+        },
+        {
+          "nombre": "Movilidad mínima de cadera y espalda",
+          "objetivo": "Soltar cadera, glúteo y columna sin generar fatiga.",
+          "tiempo": "5–8 min opcional",
+          "espacio": "Casa/oficina",
+          "jugadores": "Individual",
+          "carga": "RPE 1–2/10",
+          "instrucciones": [
+            "Gato-vaca: 8 repeticiones lentas.",
+            "Flexor de cadera: 30 s por lado.",
+            "Piriforme sentado: 30 s por lado.",
+            "Rotación torácica sentado: 6 por lado.",
+            "Respiración nasal: 60 s."
+          ],
+          "variantes": [
+            "Si estás en oficina: hacer todo sentado salvo flexor de cadera."
+          ],
+          "errores_comunes": [
+            "Estirar hasta dolor.",
+            "Hacerlo como rutina de fuerza.",
+            "No diferenciar rigidez de dolor."
+          ],
+          "recomendacion_entrenador": "Si aparece dolor 4/10 o más, este día se queda solo en descanso y observación."
+        }
+      ],
+      "indicadores": [
+        "No aumenta la fatiga del lunes.",
+        "Disminuye rigidez al final del día.",
+        "No se realiza entrenamiento extra por ansiedad."
+      ],
+      "observacion": "Martes es parte del plan. Descansar también es una decisión de entrenamiento."
+    },
+    {
+      "dia": "Miércoles",
+      "titulo": "Descanso total o movilidad preparatoria",
+      "objetivo": "Llegar al jueves con piernas disponibles, espalda sin rigidez excesiva y materiales preparados.",
+      "materiales": "Mat opcional, agua",
+      "jugadores": "Individual",
+      "intensidad": "Muy baja",
+      "timeline": [
+        {
+          "tiempo": "0–2 min",
+          "actividad": "Chequeo de dolor/fatiga."
+        },
+        {
+          "tiempo": "2–8 min",
+          "actividad": "Movilidad suave si hace falta."
+        },
+        {
+          "tiempo": "8–10 min",
+          "actividad": "Preparación logística del jueves."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Chequeo de recuperación",
+          "objetivo": "Decidir si conviene descanso total o movilidad mínima.",
+          "tiempo": "2 min",
+          "espacio": "Cualquier lugar",
+          "jugadores": "Individual",
+          "carga": "Sin carga",
+          "instrucciones": [
+            "Anotar fatiga general 0–10.",
+            "Anotar dolor lumbar, glúteo, rodilla o tobillo 0–10.",
+            "Si fatiga ≥7 o dolor ≥4: no hacer movilidad exigente.",
+            "Si fatiga ≤5 y dolor ≤3: realizar movilidad mínima."
+          ],
+          "variantes": [
+            "Usar notas del celular o tabla impresa."
+          ],
+          "errores_comunes": [
+            "Ignorar dolor que baja por la pierna.",
+            "Confundir cansancio mental con necesidad de entrenar fuerte."
+          ],
+          "recomendacion_entrenador": "La respuesta al chequeo manda más que las ganas de entrenar."
+        },
+        {
+          "nombre": "Movilidad preparatoria para cancha",
+          "objetivo": "Liberar rangos de movimiento útiles para correr, perfilarse y frenar el jueves.",
+          "tiempo": "6–8 min",
+          "espacio": "2×2 m",
+          "jugadores": "Individual",
+          "carga": "RPE 1–2/10",
+          "instrucciones": [
+            "90/90 de cadera: 45 s por lado.",
+            "Puente de glúteos: 2×12 con pausa arriba de 2 s.",
+            "Bird-dog: 2×6 por lado.",
+            "Movilidad de tobillo contra pared: 8 por lado.",
+            "Respiración nasal: 60 s."
+          ],
+          "variantes": [
+            "Si hay poco tiempo: puente + tobillo + respiración."
+          ],
+          "errores_comunes": [
+            "Hacer zancadas profundas si hay dolor.",
+            "Apretar zona lumbar durante puente.",
+            "Apurar las repeticiones."
+          ],
+          "recomendacion_entrenador": "Debe sentirse como preparación, no como entrenamiento."
+        }
+      ],
+      "indicadores": [
+        "Llega al jueves sin sensación de piernas pesadas.",
+        "Tiene ropa, balón y agua listos.",
+        "No aparece dolor nuevo."
+      ],
+      "observacion": "Miércoles protege la calidad del jueves. No conviene “recuperar” lo no entrenado haciendo de más."
+    },
+    {
+      "dia": "Jueves",
+      "titulo": "Agilidad + pase + core estable",
+      "objetivo": "Mejorar desplazamientos cortos, frenadas controladas, pase rasante y estabilidad corporal para jugar mejor en espacio reducido.",
+      "materiales": "Balón, 6 conos, pared/arco/objetivo, cronómetro, mat opcional",
+      "jugadores": "1–8",
+      "intensidad": "Media",
+      "timeline": [
+        {
+          "tiempo": "0–10 min",
+          "actividad": "Calentamiento dinámico con balón."
+        },
+        {
+          "tiempo": "10–24 min",
+          "actividad": "Agilidad y frenada controlada."
+        },
+        {
+          "tiempo": "24–40 min",
+          "actividad": "Pase contra pared u objetivo con control orientado."
+        },
+        {
+          "tiempo": "40–52 min",
+          "actividad": "Core estable y prevención."
+        },
+        {
+          "tiempo": "52–60 min",
+          "actividad": "Vuelta a la calma y registro."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Agilidad lateral + frenada",
+          "objetivo": "Mejorar respuesta en defensa, ajuste de pasos y capacidad de frenar sin perder postura.",
+          "tiempo": "14 min",
+          "espacio": "Dos conos separados 4–5 m",
+          "jugadores": "1–8",
+          "carga": "RPE 6/10",
+          "instrucciones": [
+            "Calentar 2 pasadas laterales suaves sin cronómetro.",
+            "Bloque A: desplazamiento lateral 4×20 s; descansar 40 s. No cruzar pies.",
+            "Bloque B: ida lateral + vuelta trote suave 4 repeticiones por lado; descansar 30 s.",
+            "Bloque C: aceleración 5 m + frenada en 2 pasos, 6 repeticiones; descansar 30–40 s.",
+            "Semanas 5–8: agregar reacción a señal visual o verbal del entrenador."
+          ],
+          "variantes": [
+            "Con balón: conducir 5 m y frenar pisando balón.",
+            "Más fácil: bajar a 3 m entre conos.",
+            "Más difícil: agregar cambio de dirección al centro."
+          ],
+          "errores_comunes": [
+            "Cruzar pies en lateral.",
+            "Frenar con rodilla rígida.",
+            "Inclinar tronco demasiado hacia adelante.",
+            "Hacer repeticiones máximas sin técnica."
+          ],
+          "recomendacion_entrenador": "La frenada correcta vale más que la velocidad. Rodillas semiflexionadas y pasos cortos."
+        },
+        {
+          "nombre": "Pase contra pared con control orientado",
+          "objetivo": "Aumentar precisión del pase, velocidad del primer control y perfil corporal antes de jugar.",
+          "tiempo": "16 min",
+          "espacio": "3–6 m frente a pared u objetivo",
+          "jugadores": "1–2",
+          "carga": "RPE 4–5/10",
+          "instrucciones": [
+            "Marcar un objetivo en la pared de 80×80 cm.",
+            "Serie 1: 30 pases con derecha, dos toques. Descanso 30 s.",
+            "Serie 2: 30 pases con izquierda, dos toques. Descanso 30 s.",
+            "Serie 3: 30 pases alternando pie derecho e izquierdo. Descanso 45 s.",
+            "Serie 4: 20 controles orientados a derecha + pase; 20 controles orientados a izquierda + pase.",
+            "Cierre: 10 pases a un toque solo si la precisión fue buena en series anteriores."
+          ],
+          "variantes": [
+            "Con compañero: pase y devolución con movimiento lateral 2 m.",
+            "Más difícil: reducir objetivo a 50×50 cm.",
+            "Más fácil: aumentar distancia de control y usar dos toques siempre."
+          ],
+          "errores_comunes": [
+            "Golpear con tobillo blando.",
+            "Pie de apoyo mirando fuera del objetivo.",
+            "Recibir de frente sin perfilar cadera.",
+            "Pase elevado cuando se pide rasante."
+          ],
+          "recomendacion_entrenador": "Contar solo pases que entran en el objetivo. Si no entra, no suma."
+        },
+        {
+          "nombre": "Core estable para cambios de dirección",
+          "objetivo": "Mejorar control de tronco y pelvis para reducir sobrecarga lumbar durante giros y frenadas.",
+          "tiempo": "12 min",
+          "espacio": "Zona plana 3×3 m",
+          "jugadores": "1–10",
+          "carga": "RPE 5/10",
+          "instrucciones": [
+            "Plancha frontal: 3×30–40 s; descanso 30 s.",
+            "Plancha lateral: 2×25–30 s por lado; descanso 20–30 s.",
+            "Dead bug: 3×8 por lado, exhalando al extender pierna/brazo.",
+            "Pallof press con banda si existe: 2×10 por lado; si no, omitir."
+          ],
+          "variantes": [
+            "Más fácil: plancha con rodillas apoyadas.",
+            "Más difícil: aumentar 5 s por semana hasta máximo 50 s."
+          ],
+          "errores_comunes": [
+            "Cadera caída en plancha.",
+            "Aguantar la respiración.",
+            "Mover la espalda en dead bug."
+          ],
+          "recomendacion_entrenador": "Si tiembla mucho pero mantiene postura, está bien. Si pierde postura, cortar la serie."
+        }
+      ],
+      "indicadores": [
+        "Mantiene desplazamiento lateral sin cruzar pies.",
+        "Logra al menos 70% de pases dentro del objetivo.",
+        "Puede frenar en 2 pasos sin dolor ni descontrol.",
+        "Finaliza core sin colapsar postura."
+      ],
+      "observacion": "Jueves es técnico y de calidad. Subir velocidad solo si el pase y la frenada están estables."
+    },
+    {
+      "dia": "Viernes",
+      "titulo": "Técnica suave + recuperación activa",
+      "objetivo": "Tocar balón y soltar piernas antes del sábado, manteniendo baja carga física y evitando competencia fuerte.",
+      "materiales": "Balón, 4 conos, objetivo o pared, agua",
+      "jugadores": "1–6",
+      "intensidad": "Baja",
+      "timeline": [
+        {
+          "tiempo": "0–8 min",
+          "actividad": "Entrada en calor suave."
+        },
+        {
+          "tiempo": "8–22 min",
+          "actividad": "Técnica de conducción y control sin fatiga."
+        },
+        {
+          "tiempo": "22–34 min",
+          "actividad": "Pase suave y coordinación."
+        },
+        {
+          "tiempo": "34–45 min",
+          "actividad": "Movilidad, respiración y descarga."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Conducción técnica de baja carga",
+          "objetivo": "Mejorar sensibilidad con el balón sin acumular fatiga antes del sábado.",
+          "tiempo": "14 min",
+          "espacio": "Cuadrado 8×8 m",
+          "jugadores": "1–6",
+          "carga": "RPE 3–4/10",
+          "instrucciones": [
+            "2 min conducción libre con ambos pies.",
+            "3 min solo interior del pie: toques cortos, balón cerca.",
+            "3 min interior-exterior alternado: 20 s trabajo + 20 s pausa.",
+            "3 min planta del pie: pisar, arrastrar y salir lateral.",
+            "3 min conducción con mirada arriba: mirar un punto externo cada 3 toques."
+          ],
+          "variantes": [
+            "Con música/ritmo: cambiar superficie cuando el entrenador aplaude.",
+            "Con compañero: espejo sin quitar balón."
+          ],
+          "errores_comunes": [
+            "Acelerar demasiado por ansiedad.",
+            "No usar pierna no dominante.",
+            "Tocar con planta fuerte y perder control."
+          ],
+          "recomendacion_entrenador": "Viernes debe terminar con sensación de piernas más sueltas que al inicio."
+        },
+        {
+          "nombre": "Pase suave + control de primer toque",
+          "objetivo": "Reforzar precisión y primer control sin exigir sistema cardiovascular.",
+          "tiempo": "12 min",
+          "espacio": "3–5 m frente a pared u objetivo",
+          "jugadores": "1–4",
+          "carga": "RPE 3/10",
+          "instrucciones": [
+            "20 pases con derecha, pausa 20 s.",
+            "20 pases con izquierda, pausa 20 s.",
+            "20 pases alternados, pausa 30 s.",
+            "15 controles con planta y pase.",
+            "15 controles orientados hacia fuera y pase.",
+            "Cerrar con 10 pases lentos buscando técnica perfecta."
+          ],
+          "variantes": [
+            "Con compañero: pase, control, pase y cambio de posición.",
+            "Más fácil: bajar velocidad del balón."
+          ],
+          "errores_comunes": [
+            "Rematar en vez de pasar.",
+            "Levantar balón sin intención.",
+            "Recibir con pierna rígida."
+          ],
+          "recomendacion_entrenador": "No contar cantidad total; contar pases limpios y controles orientados."
+        },
+        {
+          "nombre": "Descarga de cadera, gemelos y respiración",
+          "objetivo": "Reducir tensión muscular y preparar mejor el bloque sábado-domingo.",
+          "tiempo": "10–11 min",
+          "espacio": "Borde de cancha",
+          "jugadores": "1–6",
+          "carga": "RPE 1/10",
+          "instrucciones": [
+            "Caminata lenta 2 min.",
+            "Flexor de cadera: 45 s por lado.",
+            "Piriforme/glúteo: 45 s por lado.",
+            "Gemelos: 40 s por lado.",
+            "Isquiosurales suave: 30 s por lado.",
+            "Respiración 4-2-6: inhalar 4 s, sostener 2 s, exhalar 6 s durante 90 s."
+          ],
+          "variantes": [
+            "Si el suelo está húmedo: hacer estiramientos de pie."
+          ],
+          "errores_comunes": [
+            "Estirar hasta sentir dolor.",
+            "No bajar pulsaciones.",
+            "Terminar con piques porque “sobró energía”."
+          ],
+          "recomendacion_entrenador": "La regla del viernes: no competir, no perseguir todas las pelotas, no salir cansado."
+        }
+      ],
+      "indicadores": [
+        "Termina con fatiga 3–4/10.",
+        "Mejora sensación de movilidad respecto al inicio.",
+        "No realiza sprints ni remates fuertes."
+      ],
+      "observacion": "Viernes es una sesión de ajuste fino. Si se convierte en partido, arruina la calidad del sábado."
+    },
+    {
+      "dia": "Sábado",
+      "titulo": "Técnica + remate + pichanga controlada",
+      "objetivo": "Concentrar la carga fuerte de la semana, integrando conducción, pase, remate y decisiones reales de juego.",
+      "materiales": "Balón, 6–8 conos, arco o zona de remate, petos opcionales, agua",
+      "jugadores": "1–10",
+      "intensidad": "Media-alta progresiva",
+      "timeline": [
+        {
+          "tiempo": "0–12 min",
+          "actividad": "Calentamiento completo."
+        },
+        {
+          "tiempo": "12–26 min",
+          "actividad": "Dominio, conducción y pase de profundidad."
+        },
+        {
+          "tiempo": "26–42 min",
+          "actividad": "Remate técnico progresivo."
+        },
+        {
+          "tiempo": "42–62 min",
+          "actividad": "Pichanga controlada o juego reducido."
+        },
+        {
+          "tiempo": "62–70 min",
+          "actividad": "Vuelta a la calma y registro."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Dominio + pase de profundidad",
+          "objetivo": "Preparar gestos técnicos útiles antes del remate y la pichanga.",
+          "tiempo": "14 min",
+          "espacio": "Media cancha o carril 15×20 m",
+          "jugadores": "1–8",
+          "carga": "RPE 5–6/10",
+          "instrucciones": [
+            "3 min conducción libre con cambios de dirección suaves.",
+            "4 min zigzag: 4 pasadas derecha, 4 pasadas izquierda, descanso 20–30 s.",
+            "4 min pase filtrado entre dos conos: 12 pases por pie desde 6–8 m.",
+            "3 min control orientado + pase largo suave: 8 intentos por lado."
+          ],
+          "variantes": [
+            "Con compañero: pase al espacio y devolución.",
+            "Sin arco: usar dos conos como puerta de pase."
+          ],
+          "errores_comunes": [
+            "Forzar pase largo sin postura.",
+            "Patear fuerte sin mirar objetivo.",
+            "No perfilar cuerpo antes de recibir."
+          ],
+          "recomendacion_entrenador": "La profundidad se entrena con dirección y timing, no solo fuerza."
+        },
+        {
+          "nombre": "Remate técnico progresivo",
+          "objetivo": "Mejorar definición priorizando postura, precisión y elección de superficie de golpeo.",
+          "tiempo": "16 min",
+          "espacio": "Arco o zona objetivo; distancia 6–10 m",
+          "jugadores": "1–8",
+          "carga": "RPE 6–7/10",
+          "instrucciones": [
+            "Bloque 1: 8 remates con balón detenido, interior del pie, buscando esquina. Descanso breve cada 4.",
+            "Bloque 2: 8 remates después de conducción de 5 m; tocar dos veces antes de rematar.",
+            "Bloque 3: 6 remates con pierna no dominante a baja potencia.",
+            "Bloque 4: 6 remates colocados alternando esquina derecha/izquierda.",
+            "Bloque 5 semanas 5–8: 4 remates tras cambio de dirección.",
+            "Pausa: 20–30 s cada 4–6 remates para mantener técnica."
+          ],
+          "variantes": [
+            "Más fácil: acercar distancia a 5 m.",
+            "Más difícil: rematar después de pase de compañero.",
+            "Sin arco: usar dos zonas objetivo con conos."
+          ],
+          "errores_comunes": [
+            "Inclinarse hacia atrás y elevar siempre el balón.",
+            "Rematar sin mirar portería.",
+            "Golpear con punta sin intención.",
+            "Priorizar potencia antes de precisión."
+          ],
+          "recomendacion_entrenador": "Un remate fuerte fuera no cuenta como éxito. Primero dirección, luego potencia."
+        },
+        {
+          "nombre": "Pichanga controlada con consignas",
+          "objetivo": "Transferir lo entrenado al juego sin perder control de carga.",
+          "tiempo": "20 min",
+          "espacio": "Cancha de futbolito",
+          "jugadores": "4–10",
+          "carga": "RPE 7–8/10 en bloques",
+          "instrucciones": [
+            "Formato recomendado: 4 bloques de 4 min con 90 s de pausa.",
+            "Consigna bloque 1: máximo dos toques por jugador.",
+            "Consigna bloque 2: después de pasar, moverse a zona libre.",
+            "Consigna bloque 3: equipo sin balón debe cerrar línea de pase central.",
+            "Consigna bloque 4: finalizar jugada antes de 8 s al recuperar.",
+            "Si son pocos jugadores: hacer 1v1 o 2v2 en espacio reducido, bloques de 3 min."
+          ],
+          "variantes": [
+            "Semanas 1–2: 3 bloques de 4 min.",
+            "Semanas 3–4: 4 bloques de 4 min.",
+            "Semanas 5–6: 4 bloques de 5 min.",
+            "Semanas 7–8: 2 bloques de 8 min + 1 bloque libre."
+          ],
+          "errores_comunes": [
+            "Jugar todos los bloques al 100%.",
+            "No respetar pausas.",
+            "Perseguir cada pelota sin cuidar posición.",
+            "Olvidar la consigna del bloque."
+          ],
+          "recomendacion_entrenador": "La pichanga debe tener intención. Cada bloque entrena una decisión concreta."
+        }
+      ],
+      "indicadores": [
+        "Logra remates colocados antes de aumentar potencia.",
+        "Respeta pausas de pichanga.",
+        "Aplica al menos una consigna táctica por bloque.",
+        "Termina con fatiga alta controlada, no máxima."
+      ],
+      "observacion": "Sábado sí puede ser el día más exigente, pero con bloques. Si se juega sin pausas, el domingo debe pasar a descarga."
+    },
+    {
+      "dia": "Domingo",
+      "titulo": "Simulación de partido o descarga con balón",
+      "objetivo": "Ajustar la carga según el sábado: si hubo alta intensidad, descargar; si no hubo juego fuerte, simular situaciones reales con control.",
+      "materiales": "Balón, conos, arco/objetivo, registro de fatiga",
+      "jugadores": "1–10",
+      "intensidad": "Variable",
+      "timeline": [
+        {
+          "tiempo": "0–3 min",
+          "actividad": "Chequeo de fatiga y dolor."
+        },
+        {
+          "tiempo": "3–10 min",
+          "actividad": "Calentamiento suave."
+        },
+        {
+          "tiempo": "10–40 min",
+          "actividad": "Opción A simulación si está fresco u opción B descarga si está cargado."
+        },
+        {
+          "tiempo": "40–60 min",
+          "actividad": "Cierre técnico, movilidad y registro semanal."
+        }
+      ],
+      "ejercicios": [
+        {
+          "nombre": "Decisión inicial: semáforo de carga",
+          "objetivo": "Elegir la sesión correcta antes de empezar para evitar sobrecarga.",
+          "tiempo": "3 min",
+          "espacio": "Borde de cancha",
+          "jugadores": "Individual o grupo",
+          "carga": "Sin carga",
+          "instrucciones": [
+            "Preguntar fatiga general 0–10.",
+            "Preguntar dolor lumbar/glúteo/rodilla/tobillo 0–10.",
+            "Verde: fatiga 0–5 y dolor 0–3 → se permite simulación controlada.",
+            "Amarillo: fatiga 6–7 o dolor 4–5 → técnica suave y movilidad.",
+            "Rojo: fatiga 8–10 o dolor ≥6, hormigueo o dolor que baja por pierna → suspender intensidad y consultar profesional si corresponde."
+          ],
+          "variantes": [
+            "En grupo: cada jugador muestra número con dedos para decidir carga."
+          ],
+          "errores_comunes": [
+            "Decidir por ganas y no por datos.",
+            "Ocultar dolor para jugar.",
+            "Hacer remates fuertes en amarillo/rojo."
+          ],
+          "recomendacion_entrenador": "Domingo es el día más inteligente del plan: se adapta, no se fuerza."
+        },
+        {
+          "nombre": "Opción A: simulación controlada si está fresco",
+          "objetivo": "Transferir técnica y táctica a acciones parecidas al partido.",
+          "tiempo": "30–40 min",
+          "espacio": "Cancha completa o media cancha",
+          "jugadores": "2–10",
+          "carga": "RPE 6–7/10",
+          "instrucciones": [
+            "Calentamiento 7 min: movilidad + conducción suave + 10 pases.",
+            "Bloque 1: intervalos con balón 6×45 s trabajo + 45 s pausa.",
+            "Bloque 2: 8 min de juego condicionado: recuperar y finalizar en menos de 8 s.",
+            "Bloque 3: 8 remates técnicos colocados, sin máxima potencia.",
+            "Bloque 4: 5 min de posesión o pase y movilidad, baja intensidad."
+          ],
+          "variantes": [
+            "Con pocos jugadores: 1v1 a 3 min por bloque o conducción con finalización.",
+            "Semanas 7–8: aumentar juego condicionado a 10–12 min."
+          ],
+          "errores_comunes": [
+            "Hacer domingo igual o más fuerte que sábado.",
+            "No pausar entre intervalos.",
+            "Rematar fuerte con fatiga alta."
+          ],
+          "recomendacion_entrenador": "Debe sentirse como práctica de decisiones, no como revancha del sábado."
+        },
+        {
+          "nombre": "Opción B: descarga con balón si sábado fue fuerte",
+          "objetivo": "Mover sangre, mantener contacto con balón y acelerar recuperación sin agregar fatiga.",
+          "tiempo": "20–30 min",
+          "espacio": "Zona 10×15 m",
+          "jugadores": "1–6",
+          "carga": "RPE 2–3/10",
+          "instrucciones": [
+            "5 min caminata + conducción muy suave.",
+            "8 min pase corto a pared: 4 series de 20 pases, descanso 30 s.",
+            "5 min conducción libre con toques suaves y mirada arriba.",
+            "5 min movilidad de cadera, gemelos y respiración.",
+            "Registro semanal obligatorio: minutos, fatiga, dolor y confianza con balón."
+          ],
+          "variantes": [
+            "Si hay dolor 4–5/10: eliminar conducción y dejar movilidad + caminata.",
+            "Si no hay pared: pase a puerta de conos."
+          ],
+          "errores_comunes": [
+            "Transformar descarga en pichanga.",
+            "No hacer registro.",
+            "Alargar la sesión porque “se siente fácil”."
+          ],
+          "recomendacion_entrenador": "La descarga correcta deja el cuerpo mejor para el lunes."
+        }
+      ],
+      "indicadores": [
+        "Elige opción según fatiga/dolor, no por impulso.",
+        "Registra datos semanales.",
+        "Si descarga, termina con fatiga igual o menor que al iniciar.",
+        "Si simula, respeta pausas y no alcanza esfuerzo máximo."
+      ],
+      "observacion": "El domingo define si la semana siguiente parte bien o con deuda de fatiga."
     }
   ]
 }

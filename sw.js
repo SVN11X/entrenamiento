@@ -1,4 +1,4 @@
-const CACHE_NAME = 'entrenamiento-main-v3';
+const CACHE_NAME = 'entrenamiento-main-v4-detalle-maximo';
 const ASSETS = [
     './',
     './index.html',
